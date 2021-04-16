@@ -3,6 +3,7 @@ import {
   REMOVE_REVIEW,
   UPDATE_REVIEW,
   EDIT_NICKNAME,
+  UPDATE_REVIEWLIST,
 } from '../actions/index';
 import initialState from './initialState';
 
@@ -40,6 +41,12 @@ const reviewReducer = (state = initialState, action) => {
       return {
         ...state,
         ...action.payload, // 배열아님..... 스트링 {usrname : delilah} 객체로
+      };
+
+    case UPDATE_REVIEWLIST:
+      return {
+        ...state,
+        reviewList: [...state.reviewList, ...action.payload.review],
       };
 
     default:
