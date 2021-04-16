@@ -12,6 +12,18 @@ export const UPDATE_REVIEW = 'UPDATE_REVIEW';
 export const ADD_LIKE = 'ADD_LIKE';
 export const REMOVE_LIKE = 'REMOVE_LIKE';
 
+// 유저네임
+export const EDIT_NICKNAME = 'EDIT_NICKNAME';
+
+export const editNickname = username => {
+  return {
+    type: EDIT_NICKNAME,
+    payload: {
+      user: { username },
+    },
+  };
+};
+
 export const signIn = user => {
   return {
     type: SIGN_IN,
