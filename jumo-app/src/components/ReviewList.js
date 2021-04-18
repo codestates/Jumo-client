@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import ReviewCard from './ReviewCard';
 
 const ReviewList = () => {
-  const state = useSelector(state => state.reviewReducer);
+  const state = useSelector(states => states.reviewReducer);
   const { reviews } = state;
 
   return (

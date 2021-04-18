@@ -3,13 +3,15 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import GlobalStyles from './styles/GlobalStyles';
 import Detail from './pages/Detail';
 // import BestMakgeollis from './pages/BestMakgeollis';
-import Nav from './pages/header';
+import Header from './pages/header';
+import SignIn from './pages/SignIn';
 
 const App = () => {
   return (
     <Router>
       <GlobalStyles />
-      <Nav />
+      <Header />
+      <SignIn />
       <Detail />
     </Router>
   );
