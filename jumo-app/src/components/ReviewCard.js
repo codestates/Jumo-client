@@ -149,7 +149,7 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
         <StyleCreated>{date}</StyleCreated>
       </StyleWriter>
       <StyleContents>
-        {image !== '' && <StyleImg src={image} alt="유저 이미지" />}
+        {/* {image !== '' && <StyleImg src={image} alt="유저 이미지" />} */}
         <StyleEffective>
           {edit ? (
             <StyleInput
