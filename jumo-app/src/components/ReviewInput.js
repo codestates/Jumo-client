@@ -1,3 +1,5 @@
+/* eslint-disable no-else-return */
+/* eslint-disable no-useless-return */
 /* eslint-disable object-shorthand */
 /* eslint-disable no-lonely-if */
 /* eslint-disable react/prop-types */
@@ -9,13 +11,15 @@ import { useParams } from 'react-router-dom';
 import { updateReivewList } from '../actions';
 import server from '../apis/server';
 import StarInput from './StarInput';
+import Dialog from './Dialog';
 
-const ReviewInput = ({ makgeolliId, setAllReviews }) => {
+const ReviewInput = ({ makgeolliId, setAllReviews, openHandler }) => {
   const [userName, setUserName] = useState('');
   const [rating, setRating] = useState(1);
   const [hoverRating, setHoverRating] = useState(0);
   const [inputText, setInputText] = useState('');
   const accessToken = localStorage.getItem('accessToken');
+  const [dialog, setDialog] = useState(false);
 
   // const userName = userInfo.name;
   const { name } = useParams();
@@ -39,9 +43,9 @@ const ReviewInput = ({ makgeolliId, setAllReviews }) => {
     }
   };
 
-  useEffect(() => {
-    getUserInfo();
-  }, []);
+  const onConfirm = () => {
+    setDialog(false);
+  };
 
   const handleReview = e => {
     setInputText(e.target.value);
@@ -49,10 +53,11 @@ const ReviewInput = ({ makgeolliId, setAllReviews }) => {
 
   const handleSave = async () => {
     if (!accessToken) {
-      alert('로그인 해 주세요.');
+      openHandler();
+      return;
     } else {
       if (!inputText.length) {
-        alert('리뷰를 입력해주세요(최소 2글자).');
+        setDialog(true);
         return;
       }
 
@@ -78,44 +83,59 @@ const ReviewInput = ({ makgeolliId, setAllReviews }) => {
     }
   };
 
+  useEffect(() => {
+    getUserInfo();
+  }, []);
+
   return (
-    <StyleInputBox>
-      <div>
-        <StyleStarBox>
-          {[1, 2, 3, 4, 5].map((el, idx) => (
-            <StarInput
-              index={idx}
-              rating={rating}
-              key={el / 2}
-              hoverRating={hoverRating}
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
-              onSaveRating={onSaveRating}
-            />
-          ))}
-        </StyleStarBox>
+    <>
+      <StyleInputBox>
+        <div>
+          <StyleStarBox>
+            {[1, 2, 3, 4, 5].map((el, idx) => (
+              <StarInput
+                index={idx}
+                rating={rating}
+                key={el / 2}
+                hoverRating={hoverRating}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                onSaveRating={onSaveRating}
+              />
+            ))}
+          </StyleStarBox>
 
-        <StyleInputWrap>
-          <StyleInputItem>
-            <StyleInput
-              maxLength={300}
-              onChange={handleReview}
-              placeholder="리뷰를 입력해주세요(300자 이내)"
-              ref={reviewText}
-            />
-          </StyleInputItem>
-          <StyleBtnItem>
-            <StyleSaveBtn onClick={handleSave}>SAVE</StyleSaveBtn>
-          </StyleBtnItem>
-        </StyleInputWrap>
+          <StyleInputWrap>
+            <StyleInputItem>
+              <StyleInput
+                maxLength={300}
+                onChange={handleReview}
+                placeholder="리뷰를 입력해주세요(300자 이내)"
+                ref={reviewText}
+              />
+            </StyleInputItem>
+            <StyleBtnItem>
+              <StyleSaveBtn onClick={handleSave}>SAVE</StyleSaveBtn>
+            </StyleBtnItem>
+          </StyleInputWrap>
 
-        <StyleBtnWrap>
-          <StyleBtnArea>
-            <StyleBtnPhoto>photo</StyleBtnPhoto>
-          </StyleBtnArea>
-        </StyleBtnWrap>
-      </div>
-    </StyleInputBox>
+          <StyleBtnWrap>
+            <StyleBtnArea>
+              <StyleBtnPhoto>photo</StyleBtnPhoto>
+            </StyleBtnArea>
+          </StyleBtnWrap>
+        </div>
+      </StyleInputBox>
+      <Dialog
+        title="리뷰 내용을 입력해주세요"
+        confirmText="확인"
+        cancelText=""
+        onConfirm={onConfirm}
+        visible={dialog}
+      >
+        최소 2글자입니다.
+      </Dialog>
+    </>
   );
 };
 
