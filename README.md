@@ -2,7 +2,7 @@
 
 # 스택
 ## Front
-<img src="https://img.shields.io/badge/black?style=for-the-badge&logo=React&logoColor=61DAFB"/><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React&logoColor=61DAFB"/><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge"/>   
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Hexo&logoColor=blue"/><img src="https://img.shields.io/badge/Hooks-blue?style=for-the-badge"/>   
 
@@ -23,7 +23,7 @@
 
 <img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Sega&logoColor=0089CF"/><img src="https://img.shields.io/badge/Sequelize-0089CF?style=for-the-badge"/>   
 
-<img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Jsoon Web Tokens&logoColor=white"/><img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Jsoon%20Web%20Tokens&logoColor=white"/><img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge"/>   
 
 <img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Express&logoColor=lightgrey"/><img src="https://img.shields.io/badge/Express-lightgrey?style=for-the-badge"/>   
 
