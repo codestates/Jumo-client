@@ -1,1 +1,1 @@
-https://img.shields.io/badge/style-forthebage-red?PROJECT=jumo.ml
+<img src="https://img.shields.io/badge/style-forthebage-red?PROJECT=jumo.ml"/>
