@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import server from '../apis/server';
 import StarIcon from './StarIcon';
 import Dialog from './Dialog';
+import dateFormat from '../atoms/dateFormat';
 
 const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   const {
@@ -28,6 +29,7 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   const [save, setSave] = useState(false);
   const [dialog, setDialog] = useState(false);
   const [dialogSave, setDialogSave] = useState(false);
+  const [date, setDate] = useState('');
 
   const getUserInfo = async () => {
     try {
@@ -131,6 +133,8 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
 
   useEffect(() => {
     getUserInfo();
+    const format = dateFormat(createdAt);
+    setDate(format);
   }, []);
 
   return (
@@ -142,7 +146,7 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
             <StarIcon index={idx} star={star} key={el} />
           ))}
         </StyleStarBox>
-        <StyleCreated>{createdAt}</StyleCreated>
+        <StyleCreated>{date}</StyleCreated>
       </StyleWriter>
       <StyleContents>
         {image !== '' && <StyleImg src={image} alt="유저 이미지" />}
