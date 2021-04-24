@@ -25,25 +25,27 @@ function FirstRending() {
   `;
   const FirstTitle = styled.div`
     color: white;
-    font-size: 5rem;
+    font-size: 15vw;
     font-family: 'Sansation';
     text-transform: uppercase;
     padding-left: 1rem;
-    z-index: 2;
+    z-index: 10;
     animation-fill-mode: backwards;
     transition-duration: 1s;
     @media ${props => props.theme.tablet} {
       color: white;
       width: 100vw;
-      font-size: 8rem;
+      font-size: 11vw;
       font-family: 'Sansation';
       text-transform: uppercase;
-      z-index: 2;
+      z-index: 10;
       animation-fill-mode: backwards;
-      transition-duration: 2s;
+      transition-duration: 1s;
       &:hover {
-        width: 80vw;
+        width: 90vw;
+        font-size: 13vw;
         border-bottom: 3px solid white;
+        transform: translateY(-3vh);
         color: #f0c84d;
         border-color: #f0c84d;
       }
@@ -68,11 +70,11 @@ function FirstRending() {
     width: 72vw;
     height: 50vh;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 3vw;
     font-family: 'Sansation';
     top: 25%;
     left: 15%;
-    z-index: 1;
+    z-index: 0;
     border-radius: 30px;
     transition-duration: 0.5s;
     @media ${props => props.theme.tablet} {
@@ -82,45 +84,41 @@ function FirstRending() {
       position: absolute;
       top: 25%;
       left: 20%;
-      z-index: 1;
+      z-index: 0;
       border-radius: 30px;
       transition-duration: 0.5s;
-      &:hover {
-        transform: rotateX(30deg);
-        font-size: 0px;
-        height: 62vh;
-        padding: 10px;
-      }
     }
   `;
   const Gif = styled.div`
     position: relative;
     width: 30vw;
     height: 40vh;
-    left: -50%;
+    left: 12%;
+    top: 20%;
     border-radius: 10px;
     background-color: blue;
     transition-duration: 1s;
-    z-index: 40;
+    z-index: 1;
     @media ${props => props.theme.tablet} {
       position: relative;
-      left: 0%;
+      left: 30%;
+      top: 20%;
       width: 40vw;
-      height: 40vh;
+      height: 44vh;
       background-color: blue;
       transition-duration: 1s;
-      z-index: 40;
+      z-index: 1;
       &:hover {
-        margin: 3vh;
-        width: 45vw;
-        height: 45vh;
+        padding-right: 1vw;
+        width: 42vw;
+        height: 42vh;
       }
     }
   `;
   return (
     <FirstChapter>
-      <FirstTitle>Brewerys</FirstTitle>
       <Link to="/brewery/info">
+        <FirstTitle>Brewerys</FirstTitle>
         <Photo src={photo} alt="photo" />
         <Gif />
       </Link>

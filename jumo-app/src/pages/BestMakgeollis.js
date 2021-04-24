@@ -193,11 +193,12 @@ const StyleTitle = styled.div`
   font-family: 'Sansation';
   display: flex;
   font-size: 3.5rem;
+  position: relative;
+  top: 20%;
   /* text-align: center; */
   color: white;
   font-weight: bolder;
   z-index: 500;
-  top: 0;
   margin-top: 6em;
   padding-bottom: 2em;
   background: linear-gradient(

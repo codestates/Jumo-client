@@ -180,7 +180,7 @@ function TitleRending() {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 100vmin;
+    width: 100vw;
     height: 100vh;
     word-break: break-all;
     @media ${props => props.theme.tablet} {
@@ -189,7 +189,7 @@ function TitleRending() {
       justify-content: space-evenly;
       align-items: center;
       width: 100vw;
-      height: 720px;
+      height: 100vh;
       word-break: break-all;
     }
     @media ${props => props.theme.desktop} {
@@ -198,14 +198,14 @@ function TitleRending() {
       justify-content: space-evenly;
       align-items: center;
       width: 100vw;
-      height: 720px;
+      height: 100vh;
       word-break: break-all;
     }
   `;
   const SubTitle = styled.h1`
     color: white;
     position: relative;
-    top: 80px;
+    top: 12%;
     text-align: center;
     animation: ${slidein} 4s, ${animatedbang} 2s infinite;
     transition-duration: 1s;
@@ -237,76 +237,76 @@ function TitleRending() {
   };
   const J = styled.div`
     color: white;
-    font-size: 13rem;
+    font-size: 18vw;
     animation: ${popUp} 1s 1s, ${slidein} 1s 1s, ${rotate} 1.4s 5.4s;
     animation-fill-mode: backwards;
     transition-duration: 1s;
     @media ${props => props.theme.tablet} {
       color: white;
-      font-size: 13rem;
+      font-size: 18vw;
       animation: ${popUp} 1s 1s, ${slidein} 1s 1s, ${rotate} 1.4s 5.4s;
       animation-fill-mode: backwards;
       transition-duration: 1s;
       &:hover {
         color: red;
-        font-size: 15rem;
+        font-size: 20vw;
         text-shadow: 0px 0px 0px black;
       }
     }
   `;
   const U = styled.div`
     color: white;
-    font-size: 7rem;
+    font-size: 13vw;
     animation: ${popUp} 1s 1.5s, ${slidein} 1s 1.5s;
     animation-fill-mode: backwards;
     transition-duration: 1s;
     @media ${props => props.theme.tablet} {
       color: white;
-      font-size: 7rem;
+      font-size: 13vw;
       animation: ${popUp} 1s 1.5s, ${slidein} 1s 1.5s;
       animation-fill-mode: backwards;
       transition-duration: 1s;
       &:hover {
         color: blue;
-        font-size: 9rem;
+        font-size: 15vw;
         text-shadow: 0px 0px 0px black;
       }
     }
   `;
   const M = styled.div`
     color: white;
-    font-size: 7rem;
+    font-size: 13vw;
     animation: ${popUp} 1s 2s, ${slidein} 1s 2s;
     animation-fill-mode: backwards;
     transition-duration: 1s;
     @media ${props => props.theme.tablet} {
       color: white;
-      font-size: 7rem;
+      font-size: 13vw;
       animation: ${popUp} 1s 2s, ${slidein} 1s 2s;
       animation-fill-mode: backwards;
       transition-duration: 1s;
       &:hover {
         color: green;
-        font-size: 9rem;
+        font-size: 15vw;
         text-shadow: 0px 0px 0px black;
       }
     }
   `;
   const O = styled.div`
     color: white;
-    font-size: 7rem;
+    font-size: 13vw;
     animation: ${popUp} 1s 2.5s, ${slidein} 1s 2.5s;
     animation-fill-mode: backwards;
     transition-duration: 1s;
     @media ${props => props.theme.tablet} {
       color: white;
-      font-size: 7rem;
+      font-size: 13vw;
       animation: ${popUp} 1s 2.5s, ${slidein} 1s 2.5s;
       animation-fill-mode: backwards;
       transition-duration: 1s;
       &:hover {
         color: purple;
-        font-size: 9rem;
+        font-size: 15vw;
         text-shadow: 0px 0px 0px black;
       }
     }

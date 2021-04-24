@@ -25,7 +25,7 @@ const SecondRending = () => {
   const SecondChapter = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 0.5vw;
     width: 100vw;
     height: 100vh;
   `;
@@ -34,30 +34,31 @@ const SecondRending = () => {
     font-family: 'Sansation';
     font-weight: lighter;
     width: 50vw;
-    font-size: 4rem;
+    padding: 1vw;
+    font-size: 10vw;
     transition-duration: 1s;
     @media ${props => props.theme.tablet} {
-      padding: 20px;
+      padding: 1vw;
       color: white;
       font-family: 'Sansation';
       font-weight: lighter;
       width: 50vw;
-      font-size: 8rem;
+      font-size: 10vw;
       transition-duration: 1s;
       &:hover {
-        font-size: 7rem;
+        font-size: 12vw;
       }
     }
     @media ${props => props.theme.desktop} {
-      padding: 20px;
+      padding: 1vw;
       color: white;
       font-family: 'Sansation';
       font-weight: lighter;
       width: 50vw;
-      font-size: 8rem;
+      font-size: 10vw;
       transition-duration: 1s;
       &:hover {
-        font-size: 10rem;
+        font-size: 12vw;
         color: #445f56;
       }
     }
@@ -67,13 +68,13 @@ const SecondRending = () => {
     font-family: 'Nanum Gothic';
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 2vh;
+    margin-left: 8vw;
     background-color: rgba(255, 100, 100, 1);
     color: white;
     text-align: center;
     width: 80vw;
-    height: 40px;
+    height: 5vh;
     border-radius: 10px;
     border: none;
     @media ${props => props.theme.tablet} {
@@ -82,15 +83,15 @@ const SecondRending = () => {
       color: white;
       float: right;
       text-align: center;
-      width: 200px;
-      height: 40px;
+      width: 20vw;
+      height: 5vh;
       border-radius: 10px;
       border: none;
-      margin: 10px;
+      margin: 1vw;
       transition-duration: 1s;
       &:hover {
-        width: 180px;
-        height: 35px;
+        width: 22vw;
+        height: 6vh;
       }
     }
   `;
@@ -116,7 +117,7 @@ const SecondRending = () => {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
+    padding: 2vw;
     width: 100%;
     color: white;
     font-weight: bold;
@@ -129,14 +130,14 @@ const SecondRending = () => {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 10px;
+      padding: 2vw;
       width: 95vw;
       color: white;
       font-weight: bold;
       height: 60vh;
       font-family: 'Nanum Gothic', sans-serif;
       background-color: rgba(0, 0, 10, 0.1);
-      font-size: 2rem;
+      font-size: 4vw;
       animation: ${contentSlide} 1s 0.5s;
       animation-fill-mode: backwards;
       transition-duration: 1s;
@@ -148,14 +149,14 @@ const SecondRending = () => {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 20px;
+      padding: 2vw;
       width: 70vw;
       color: white;
       font-weight: bold;
       height: 60vh;
       font-family: 'Nanum Gothic', sans-serif;
       background-color: rgba(0, 0, 10, 0.1);
-      font-size: 2rem;
+      font-size: 2vw;
       animation: ${contentSlide} 2s 0.5s;
       animation-fill-mode: backwards;
       transition-duration: 1s;
@@ -167,15 +168,11 @@ const SecondRending = () => {
   const Brewerys = styled.div`
     color: white;
     text-align: center;
-    font-weight: bold;
-    font-size: 20px;
     padding-top: 3vh;
     animation: ${animatedbang} 2s infinite;
     @media ${props => props.theme.tablet} {
       color: white;
       text-align: center;
-      font-weight: bold;
-      font-size: 20px;
       cursor: pointer;
       transition-duration: 1s;
       animation: ${animatedbang} 2s infinite;
@@ -186,7 +183,7 @@ const SecondRending = () => {
   `;
   const Top = styled.div`
     display: flex;
-    padding: 10px;
+    padding: 1vw;
     flex-direction: row;
     justify-content: space-around;
     @media ${props => props.theme.tablet} {
@@ -195,44 +192,44 @@ const SecondRending = () => {
     }
   `;
   const Top1 = styled.div`
-    width: 200px;
-    height: 200px;
+    width: 40vw;
+    height: 29vh;
     border: 1px solid black;
     @media ${props => props.theme.tablet} {
-      width: 200px;
-      height: 200px;
+      width: 40vw;
+      height: 29vh;
       border: 1px solid black;
       transition-duration: 1s;
       &:hover {
-        width: 220px;
-        height: 220px;
+        width: 44vw;
+        height: 31vh;
       }
     }
   `;
   const Top2 = styled.div`
-    width: 200px;
-    height: 200px;
+    width: 40vw;
+    height: 29vh;
     border: 1px solid black;
     @media ${props => props.theme.tablet} {
-      width: 200px;
-      height: 200px;
+      width: 40vw;
+      height: 29vh;
       border: 1px solid black;
       transition-duration: 1s;
       &:hover {
-        width: 220px;
-        height: 220px;
+        width: 44vw;
+        height: 31vh;
       }
     }
   `;
   const Top3 = styled.div`
     @media ${props => props.theme.tablet} {
-      width: 200px;
-      height: 200px;
+      width: 40vw;
+      height: 29vh;
       border: 1px solid black;
       transition-duration: 1s;
       &:hover {
-        width: 220px;
-        height: 220px;
+        width: 44vw;
+        height: 31vh;
       }
     }
   `;

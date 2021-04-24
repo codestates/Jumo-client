@@ -75,9 +75,9 @@ const StyleMakgeollis = styled.div`
   /* padding: 15vmin 0 !important; */
   display: flex;
   flex-direction: column;
-  border: 10px solid orange;
+  border: 10px solid white;
   width: 100vw;
-  background-color: #f2eeed;
+  background-color: #e7d1bf;
   @media ${props => props.theme.tablet} {
     padding: 0;
   }

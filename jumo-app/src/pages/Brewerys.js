@@ -54,7 +54,7 @@ const Brewerys = ({ channelHandler, navHeader, setNavHeader }) => {
   };
 
   return (
-    <>
+    <Background>
       <StyleBrewerys>
         <StyleSearchBox>
           <Search>
@@ -87,9 +87,14 @@ const Brewerys = ({ channelHandler, navHeader, setNavHeader }) => {
           {mapImage === '' ? '' : <StyleMap src={mapImage} alt="양조장 지도" />}
         </StyleSpace>
       </StyleBrewerys>
-    </>
+    </Background>
   );
 };
+const Background = styled.div`
+  width: auto;
+  height: 510vmin;
+  background-color: #e7d1bf;
+`;
 const Title = styled.div`
   display: none;
   @media ${props => props.theme.tablet} {
@@ -97,14 +102,15 @@ const Title = styled.div`
     font-family: 'Sansation';
     position: relative;
     left: 25%;
-    font-size: 4rem;
+    top: -3vh;
+    font-size: 5vw;
     &:hover {
       font-size: 0px;
     }
     &:hover:before {
       content: '양조장 리스트를 클릭해주세요.';
       font-family: 'Nanum Gothic';
-      font-size: 3rem;
+      font-size: 4vw;
     }
   }
 `;
@@ -119,7 +125,7 @@ const StyleBrewerys = styled.div`
   font-family: 'Nanum Gothic';
   color: #293848;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #e7d1bf;
   padding: 5vmin;
   padding-bottom: 10vmin;
@@ -153,7 +159,7 @@ const StyleSpace = styled.div`
 `;
 
 const Result = styled.div`
-  padding-top: 10px;
+  padding-top: 1vw;
 `;
 
 const StyleMap = styled.img`
@@ -187,7 +193,7 @@ const StyleSearchBox = styled.div`
   display: none;
   @media ${props => props.theme.tablet} {
     position: relative;
-    top: 50px;
+    top: 10vh;
     left: -24%;
     display: flex;
     flex-direction: column;
@@ -195,7 +201,7 @@ const StyleSearchBox = styled.div`
   }
   @media ${props => props.theme.desktop} {
     position: relative;
-    top: 50px;
+    top: 10vh;
     left: -28%;
     display: flex;
     flex-direction: column;
@@ -205,8 +211,8 @@ const StyleSearchBox = styled.div`
 
 const StyleInput = styled.input`
   padding: 0px 13px 0px 13px;
-  height: 35px;
-  width: 250px;
+  height: 5vh;
+  width: 22vw;
   border-radius: 10px;
   border: 1px solid black;
   margin-right: 10px;
@@ -214,12 +220,12 @@ const StyleInput = styled.input`
 
 const StyleResult = styled.div`
   position: relative;
-  top: 50px;
+  top: 10vh;
   padding-bottom: 12vh;
   @media ${props => props.theme.tablet} {
     width: 20%;
     position: relative;
-    top: 50px;
+    top: 10vh;
     left: -38%;
     display: flex;
     flex-direction: column;
@@ -228,7 +234,7 @@ const StyleResult = styled.div`
   @media ${props => props.theme.desktop} {
     width: 20%;
     position: relative;
-    top: 50px;
+    top: 10vh;
     left: -33%;
     display: flex;
     flex-direction: column;
@@ -241,24 +247,24 @@ const StyleInfo = styled.div`
   margin: 2vh;
   padding-bottom: 3px;
   width: 100%;
-  padding: 10px;
+  padding: 2vh;
   border-bottom: 1px solid black;
   transition-duration: 0.5s;
   &:hover {
     color: #e7d1bf;
-    padding: 10px;
+    padding: 2vh;
     background-color: #293848;
     border-radius: 10px;
   }
 `;
 
 const StyleTitle = styled.div`
-  font-size: 1.5rem;
+  font-size: 4vh;
   margin-bottom: 1vh;
   cursor: pointer;
   transition-duration: 0.5s;
   &:hover {
-    font-size: 1.7rem;
+    font-size: 4.5vh;
     color: steelblue;
   }
 `;
