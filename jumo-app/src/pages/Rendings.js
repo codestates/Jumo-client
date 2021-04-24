@@ -30,6 +30,7 @@ const Background = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
+  z-index: 200;
   top: 0;
   left: 0;
   background-image: linear-gradient(

@@ -68,7 +68,7 @@ const Brewerys = ({ channelHandler, navHeader, setNavHeader }) => {
             {searchText} 지역에서 {brewerys.length}개의 양조장이검색되었습니다.
           </Result>
         </StyleSearchBox>
-
+        <Title>BREWERYS</Title>
         <StyleSpace>
           <StyleResult>
             {brewerys.map(el => (
@@ -90,6 +90,24 @@ const Brewerys = ({ channelHandler, navHeader, setNavHeader }) => {
     </>
   );
 };
+const Title = styled.div`
+  display: none;
+  @media ${props => props.theme.tablet} {
+    display: block;
+    font-family: 'Sansation';
+    position: relative;
+    left: 25%;
+    font-size: 4rem;
+    &:hover {
+      font-size: 0px;
+    }
+    &:hover:before {
+      content: '양조장 리스트를 클릭해주세요.';
+      font-family: 'Nanum Gothic';
+      font-size: 3rem;
+    }
+  }
+`;
 const RepresentM = styled.div`
   transition-duration: 0.5s;
   &:hover {
