@@ -2,13 +2,13 @@
 
 # 스택
 ## Front
-<img src="https://img.shields.io/badge/style=for-the-badge&logo=React&logoColor=61DAFB"/><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/black?style=for-the-badge&logo=React&logoColor=61DAFB"/><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge"/>   
 
-<img src="https://img.shields.io/badge/style=for-the-badge&logo=Hexo&logoColor=blue"/><img src="https://img.shields.io/badge/Hooks-blue?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Hexo&logoColor=blue"/><img src="https://img.shields.io/badge/Hooks-blue?style=for-the-badge"/>   
 
-<img src="https://img.shields.io/badge/style=for-the-badge&logo=Redux&logoColor=764ABC"/><img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Redux&logoColor=764ABC"/><img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge"/>   
 
-<img src="https://img.shields.io/badge/style=for-the-badge&logo=React%20Router&logoColor=CA4245"/><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge"/>  
+<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React%20Router&logoColor=CA4245"/><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge"/>  
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=styled-components&logoColor=DB7093"/><img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge"/>  
 
