@@ -7,13 +7,10 @@ import large from '../images/larghmak.jpg';
 import st from '../images/1.png';
 import nd from '../images/2.png';
 import rd from '../images/3.png';
-import brew from '../images/brew.jpg';
 import h from '../images/h.jpeg';
 import e from '../images/e.jpg';
 import s from '../images/s.jpg';
 import j from '../images/j.jpg';
-
-import Logo from '../images/logodeep.png';
 
 function Intro({ channelHandler, navHeader, setNavHeader }) {
   // const introSec1 = IntroSec1;
