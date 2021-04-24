@@ -46,6 +46,14 @@ function TitleRending() {
       text-shadow: 8px 8px 0px black;
     }
   `;
+  const animatedbang = keyframes`
+
+  0%{transform:translateY(10px);}
+  
+  50%{transform:translateY(-20px);}
+  
+  100%{transform:translateY(10px);}
+  `;
   const intro = keyframes`
     0% {
       letter-spacing: 0px;
@@ -58,15 +66,6 @@ function TitleRending() {
     }
     100% {
       letter-spacing: 0px;
-    }
-  `;
-
-  const positionDown = keyframes`
-    0%{
-      transform: translateY(-50px);
-    }
-    100% {
-      transform: translateY(0px);
     }
   `;
 
@@ -204,15 +203,15 @@ function TitleRending() {
     }
   `;
   const SubTitle = styled.h1`
-    font-size: 1.5rem;
     color: white;
     position: relative;
     top: 80px;
     text-align: center;
-    animation: ${slidein} 4s, ${positionDown} 2s;
+    animation: ${slidein} 4s, ${animatedbang} 2s infinite;
     transition-duration: 1s;
     &:hover {
       transform: translateY(10px);
+      color: #293848;
     }
   `;
   const Title = styled.div`
@@ -329,7 +328,7 @@ function TitleRending() {
         </Title>
       </Link>
       <SubTitle onClick={toMak}>
-        <FiArrowDown />
+        <FiArrowDown size="40" />
       </SubTitle>
     </Wrapper>
   );
