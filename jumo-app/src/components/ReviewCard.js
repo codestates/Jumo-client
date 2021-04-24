@@ -1,11 +1,11 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
-import React, { useState, useSelector, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-// import { removeReview, editReview } from '../actions';
 import server from '../apis/server';
 import StarIcon from './StarIcon';
+import Dialog from './Dialog';
+import dateFormat from '../atoms/dateFormat';
 
 const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   const {
@@ -27,7 +27,9 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   const [inputText, setInputText] = useState('');
   const [edit, setEdit] = useState(false);
   const [save, setSave] = useState(false);
-  const dispatch = useDispatch();
+  const [dialog, setDialog] = useState(false);
+  const [dialogSave, setDialogSave] = useState(false);
+  const [date, setDate] = useState('');
 
   const getUserInfo = async () => {
     try {
@@ -45,10 +47,10 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   };
 
   const modifyReviews = async reviewId => {
-    if (!inputText.length) {
-      alert('리뷰를 입력해주세요(최소 2글자).');
-      return;
-    }
+    // if (!inputText.length) {
+    //   alert('리뷰를 입력해주세요(최소 2글자).');
+    //   return;
+    // }
 
     const reviewUpdate = await server.put(
       '/review/update',
@@ -89,9 +91,23 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
 
     setAllReviews(data);
   };
-  useEffect(() => {
-    getUserInfo();
-  }, []);
+
+  const onRemoveConfirm = reviewId => {
+    removeReviews(reviewId);
+    setDialog(false);
+  };
+
+  const onSaveConfirm = reviewId => {
+    modifyReviews(reviewId);
+    setDialogSave(false);
+    setEdit(false);
+    setSave(false);
+  };
+
+  const onCancel = () => {
+    setDialog(false);
+    setDialogSave(false);
+  };
 
   const handleReview = e => {
     setInputText(e.target.value);
@@ -102,27 +118,24 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
     setSave(true);
   };
 
-  const handleDelete = reviewId => {
-    if (window.confirm('정말 삭제하시겠습니까??') === false) {
-      return;
-    }
-    removeReviews(reviewId);
+  const handleDelete = () => {
+    setDialog(true);
   };
 
-  const handleUpdateSave = reviewId => {
-    if (window.confirm('정말 수정하시겠습니까??') === false) {
-      return;
-    }
-
-    setEdit(false);
-    setSave(false);
-    modifyReviews(reviewId);
+  const handleUpdateSave = () => {
+    setDialogSave(true);
   };
 
   const handleUpdateCancel = () => {
     setEdit(false);
     setSave(false);
   };
+
+  useEffect(() => {
+    getUserInfo();
+    const format = dateFormat(createdAt);
+    setDate(format);
+  }, []);
 
   return (
     <StyleReviewsBox>
@@ -133,10 +146,10 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
             <StarIcon index={idx} star={star} key={el} />
           ))}
         </StyleStarBox>
-        <StyleCreated>{createdAt}</StyleCreated>
+        <StyleCreated>{date}</StyleCreated>
       </StyleWriter>
       <StyleContents>
-        {image !== '' && <StyleImg src={image} alt="유저 이미지" />}
+        {/* {image !== '' && <StyleImg src={image} alt="유저 이미지" />} */}
         <StyleEffective>
           {edit ? (
             <StyleInput
@@ -153,9 +166,20 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
           {user_id === userInfo.id && !save ? (
             <StyleModifyBox>
               <StyleChangeBtn onClick={() => handleEdit()}>edit</StyleChangeBtn>
-              <StyleChangeBtn onClick={() => handleDelete(id)}>
-                delete
-              </StyleChangeBtn>
+              <>
+                <StyleChangeBtn onClick={() => handleDelete()}>
+                  delete
+                </StyleChangeBtn>
+
+                <Dialog
+                  title="정말 삭제하시겠습니까?"
+                  confirmText="확인"
+                  cancelText="취소"
+                  onConfirm={() => onRemoveConfirm(id)}
+                  onCancel={onCancel}
+                  visible={dialog}
+                />
+              </>
             </StyleModifyBox>
           ) : (
             ''
@@ -163,9 +187,19 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
 
           {save && (
             <StyleModifyBox>
-              <StyleChangeBtn onClick={() => handleUpdateSave(id)}>
-                save
-              </StyleChangeBtn>
+              <>
+                <StyleChangeBtn onClick={() => handleUpdateSave()}>
+                  save
+                </StyleChangeBtn>
+                <Dialog
+                  title="수정하시겠습니까?"
+                  confirmText="확인"
+                  cancelText="취소"
+                  onConfirm={() => onSaveConfirm(id)}
+                  onCancel={onCancel}
+                  visible={dialogSave}
+                />
+              </>
               <StyleChangeBtn onClick={() => handleUpdateCancel()}>
                 cancel
               </StyleChangeBtn>

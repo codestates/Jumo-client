@@ -20,7 +20,7 @@ import ReviewList from '../components/ReviewList';
 
 // import res from '../atoms/dummyMaks';
 
-const Detail = ({ channelHandler, navHeader, setNavHeader }) => {
+const Detail = ({ channelHandler, navHeader, setNavHeader, openHandler }) => {
   const [likeList, setLikeList] = useState([]);
   const [likeId, setLikeId] = useState([]);
   const accessToken = localStorage.getItem('accessToken');
@@ -238,8 +238,6 @@ const Detail = ({ channelHandler, navHeader, setNavHeader }) => {
           )}
         </StyleVertical>
       </StyleSection>
-
-      <ReviewInput makgeolliId={item.id} setAllReviews={setAllReviews} />
       <ReviewList
         makgeolliId={item.id}
         allReivews={allReivews}
