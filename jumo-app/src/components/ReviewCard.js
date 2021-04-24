@@ -1,9 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable react/prop-types */
-import React, { useState, useSelector, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-// import { removeReview, editReview } from '../actions';
 import server from '../apis/server';
 import StarIcon from './StarIcon';
 import Dialog from './Dialog';
@@ -29,6 +27,7 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   const [edit, setEdit] = useState(false);
   const [save, setSave] = useState(false);
   const [dialog, setDialog] = useState(false);
+  const [dialogSave, setDialogSave] = useState(false);
 
   const getUserInfo = async () => {
     try {
@@ -46,10 +45,10 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   };
 
   const modifyReviews = async reviewId => {
-    if (!inputText.length) {
-      alert('리뷰를 입력해주세요(최소 2글자).');
-      return;
-    }
+    // if (!inputText.length) {
+    //   alert('리뷰를 입력해주세요(최소 2글자).');
+    //   return;
+    // }
 
     const reviewUpdate = await server.put(
       '/review/update',
@@ -91,13 +90,21 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
     setAllReviews(data);
   };
 
-  const onConfirm = reviewId => {
+  const onRemoveConfirm = reviewId => {
     removeReviews(reviewId);
     setDialog(false);
   };
 
+  const onSaveConfirm = reviewId => {
+    modifyReviews(reviewId);
+    setDialogSave(false);
+    setEdit(false);
+    setSave(false);
+  };
+
   const onCancel = () => {
     setDialog(false);
+    setDialogSave(false);
   };
 
   const handleReview = e => {
@@ -109,22 +116,12 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
     setSave(true);
   };
 
-  const handleDelete = reviewId => {
+  const handleDelete = () => {
     setDialog(true);
-    // if (window.confirm('정말 삭제하시겠습니까??') === false) {
-    //   return;
-    // }
-    // removeReviews(reviewId);
   };
 
-  const handleUpdateSave = reviewId => {
-    if (window.confirm('정말 수정하시겠습니까??') === false) {
-      return;
-    }
-
-    setEdit(false);
-    setSave(false);
-    modifyReviews(reviewId);
+  const handleUpdateSave = () => {
+    setDialogSave(true);
   };
 
   const handleUpdateCancel = () => {
@@ -137,79 +134,76 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   }, []);
 
   return (
-    <>
-      <StyleReviewsBox>
-        <StyleWriter>
-          <StyleNickname>{username}</StyleNickname>
-          <StyleStarBox>
-            {['a', 'b', 'c', 'd', 'e'].map((el, idx) => (
-              <StarIcon index={idx} star={star} key={el} />
-            ))}
-          </StyleStarBox>
-          <StyleCreated>{createdAt}</StyleCreated>
-        </StyleWriter>
-        <StyleContents>
-          {image !== '' && <StyleImg src={image} alt="유저 이미지" />}
-          <StyleEffective>
-            {edit ? (
-              <StyleInput
-                maxLength={300}
-                onChange={handleReview}
-                placeholder="리뷰를 입력해주세요(300자 이내)"
-              >
-                {comment}
-              </StyleInput>
-            ) : (
-              <StyleText>{comment}</StyleText>
-            )}
+    <StyleReviewsBox>
+      <StyleWriter>
+        <StyleNickname>{username}</StyleNickname>
+        <StyleStarBox>
+          {['a', 'b', 'c', 'd', 'e'].map((el, idx) => (
+            <StarIcon index={idx} star={star} key={el} />
+          ))}
+        </StyleStarBox>
+        <StyleCreated>{createdAt}</StyleCreated>
+      </StyleWriter>
+      <StyleContents>
+        {image !== '' && <StyleImg src={image} alt="유저 이미지" />}
+        <StyleEffective>
+          {edit ? (
+            <StyleInput
+              maxLength={300}
+              onChange={handleReview}
+              placeholder="리뷰를 입력해주세요(300자 이내)"
+            >
+              {comment}
+            </StyleInput>
+          ) : (
+            <StyleText>{comment}</StyleText>
+          )}
 
-            {user_id === userInfo.id && !save ? (
+          {user_id === userInfo.id && !save ? (
+            <StyleModifyBox>
+              <StyleChangeBtn onClick={() => handleEdit()}>edit</StyleChangeBtn>
               <>
-                <StyleModifyBox>
-                  <StyleChangeBtn onClick={() => handleEdit()}>
-                    edit
-                  </StyleChangeBtn>
-                  <StyleChangeBtn onClick={() => handleDelete(id)}>
-                    delete
-                  </StyleChangeBtn>
-                </StyleModifyBox>
+                <StyleChangeBtn onClick={() => handleDelete()}>
+                  delete
+                </StyleChangeBtn>
+
                 <Dialog
-                  title="정말 삭제하시겠습니까??"
+                  title="정말 삭제하시겠습니까?"
                   confirmText="확인"
                   cancelText="취소"
-                  onConfirm={() => onConfirm(id)}
+                  onConfirm={() => onRemoveConfirm(id)}
                   onCancel={onCancel}
                   visible={dialog}
                 />
               </>
-            ) : (
-              ''
-            )}
+            </StyleModifyBox>
+          ) : (
+            ''
+          )}
 
-            {save && (
-              <StyleModifyBox>
-                <StyleChangeBtn onClick={() => handleUpdateSave(id)}>
+          {save && (
+            <StyleModifyBox>
+              <>
+                <StyleChangeBtn onClick={() => handleUpdateSave()}>
                   save
                 </StyleChangeBtn>
-                <StyleChangeBtn onClick={() => handleUpdateCancel()}>
-                  cancel
-                </StyleChangeBtn>
-              </StyleModifyBox>
-            )}
-          </StyleEffective>
-        </StyleContents>
-      </StyleReviewsBox>
-      {/* <Dialog
-        title="정말 삭제하시겠습니까??"
-        confirmText="확인"
-        cancelText="취소"
-        onConfirm={() => onConfirm(reviewId)}
-        onCancel={onCancel}
-        visible={dialog}
-      >
-        최소 2글자입니다.
-      </Dialog> */}
-    </>
+                <Dialog
+                  title="수정하시겠습니까?"
+                  confirmText="확인"
+                  cancelText="취소"
+                  onConfirm={() => onSaveConfirm(id)}
+                  onCancel={onCancel}
+                  visible={dialogSave}
+                />
+              </>
+              <StyleChangeBtn onClick={() => handleUpdateCancel()}>
+                cancel
+              </StyleChangeBtn>
+            </StyleModifyBox>
+          )}
+        </StyleEffective>
+      </StyleContents>
+    </StyleReviewsBox>
   );
 };
 
