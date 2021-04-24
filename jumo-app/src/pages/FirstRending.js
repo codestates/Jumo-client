@@ -5,6 +5,14 @@ import { FiArrowUp } from 'react-icons/fi';
 import photo from '../images/BreweyMini.jpeg';
 
 function FirstRending() {
+  const animatedbang = keyframes`
+
+  0%{transform:translateY(10px);}
+  
+  50%{transform:translateY(-20px);}
+  
+  100%{transform:translateY(10px);}
+  `;
   const FirstChapter = styled.div`
     transition-duration: 1s;
     animation-fill-mode: forwards;
@@ -36,6 +44,8 @@ function FirstRending() {
       &:hover {
         width: 80vw;
         border-bottom: 3px solid white;
+        color: #f0c84d;
+        border-color: #f0c84d;
       }
     }
   `;
@@ -45,12 +55,13 @@ function FirstRending() {
   const Top = styled.div`
     color: white;
     position: relative;
-    font-size: 20px;
     text-align: center;
+    top: 3%;
     cursor: pointer;
     transition-duration: 1s;
+    animation: ${animatedbang} 2s infinite;
     &:hover {
-      transform: translateY(-10px);
+      color: #293848;
     }
   `;
   const Photo = styled.img`
@@ -114,7 +125,7 @@ function FirstRending() {
         <Gif />
       </Link>
       <Top onClick={scrollToTop}>
-        <FiArrowUp />
+        <FiArrowUp size="40" />
       </Top>
     </FirstChapter>
   );

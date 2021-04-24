@@ -63,6 +63,7 @@ const Brewerys = ({ channelHandler, navHeader, setNavHeader }) => {
 const RepresentM = styled.div`
   transition-duration: 0.5s;
   &:hover {
+    color: yellowgreen;
     transform: translateX(10px);
   }
 `;
@@ -192,11 +193,11 @@ const StyleInfo = styled.div`
   margin: 2vh;
   padding-bottom: 3px;
   width: 100%;
+  padding: 10px;
   border-bottom: 1px solid black;
   transition-duration: 0.5s;
   &:hover {
     color: #e7d1bf;
-    width: 95%;
     padding: 10px;
     background-color: #293848;
     border-radius: 10px;
@@ -210,6 +211,7 @@ const StyleTitle = styled.div`
   transition-duration: 0.5s;
   &:hover {
     font-size: 1.7rem;
+    color: steelblue;
   }
 `;
 

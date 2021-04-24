@@ -4,9 +4,16 @@ import styled, { keyframes } from 'styled-components';
 import { Link, withRouter, useHistory } from 'react-router-dom';
 import { FiArrowDown } from 'react-icons/fi';
 import photo from '../images/sideA.png';
-import useScrollClipPath from './useScrollClipPath';
 
 const SecondRending = () => {
+  const animatedbang = keyframes`
+
+  0%{transform:translateY(10px);}
+  
+  50%{transform:translateY(-20px);}
+  
+  100%{transform:translateY(10px);}
+  `;
   const contentSlide = keyframes`
     from {
       transform: translateX(-1200px);
@@ -51,6 +58,7 @@ const SecondRending = () => {
       transition-duration: 1s;
       &:hover {
         font-size: 10rem;
+        color: #445f56;
       }
     }
   `;
@@ -162,6 +170,7 @@ const SecondRending = () => {
     font-weight: bold;
     font-size: 20px;
     padding-top: 3vh;
+    animation: ${animatedbang} 2s infinite;
     @media ${props => props.theme.tablet} {
       color: white;
       text-align: center;
@@ -169,8 +178,9 @@ const SecondRending = () => {
       font-size: 20px;
       cursor: pointer;
       transition-duration: 1s;
+      animation: ${animatedbang} 2s infinite;
       &:hover {
-        transform: translateY(10px);
+        color: #293848;
       }
     }
   `;
@@ -229,14 +239,23 @@ const SecondRending = () => {
   const toBre = () => {
     window.scrollTo({ top: 2000, left: 0, behavior: 'smooth' });
   };
+  const Div = styled.div`
+    transition-duration: 1s;
+    line-height: 150%;
+    &:hover {
+      color: rgba(255, 100, 100, 0.8);
+    }
+  `;
   return (
     <SecondChapter>
       <Makgeolli>MAKGEOLLI</Makgeolli>
       <InnerContent>
-        다양한 막걸리를 구경하고 맛보고 평점을 주세요!
-        <br />
-        30만 주당유저들과 함께 여러분들의 최고의 막거리를 소개해주세요!
-        <br />
+        <Div>
+          다양한 막걸리를 구경하고 맛보고 평점을 주세요!
+          <br />
+          30만 주당유저들과 함께 여러분들의 최고의 막거리를 소개해주세요!
+          <br />
+        </Div>
         <Top>
           <Top1 />
           <Top2 />
@@ -250,7 +269,7 @@ const SecondRending = () => {
         <img src={photo} alt="sideA" />
       </Speaking>
       <Brewerys onClick={toBre}>
-        <FiArrowDown />
+        <FiArrowDown size="40" />
       </Brewerys>
     </SecondChapter>
   );
