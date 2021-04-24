@@ -23,7 +23,6 @@ const App = () => {
   const [query, setQuery] = useState('');
   const [pageNum, setPageNum] = useState(0);
   const { isLoading, error, pick, hasMore } = useSearchItem(query, pageNum);
-  // const { isLoading, error, pick, hasMore } = useListItem(pageNum);
   const [channel, setChannel] = useState('');
   const [navHeader, setNavHeader] = useState(false);
   const [openSignIn, setOpenSignIn] = useState(false);
@@ -155,6 +154,7 @@ const App = () => {
             channelHandler={channelHandler}
             navHeader={navHeader}
             setNavHeader={setNavHeader}
+            openHandler={openHandler}
           />
         </Route>
         <Route path="/brewery/info">

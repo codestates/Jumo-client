@@ -1,35 +1,21 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 // import axios from 'axios';
 import { FiSearch } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import icon from '../images/JumoIcon.PNG';
 
-const inputshow = () => {
-  if (document.getElementById('input').style.visibility === 'visible') {
-    document.getElementById('input').style.visibility = 'hidden';
-  } else {
-    document.getElementById('input').style.visibility = 'visible';
-  }
-};
-
 const Header = ({ changeHandler, channel }) => {
-  // const [searchText, setSearchText] = useState('');
-  // const [searchItem, setSearchItem] = useState([]);
+  const searchText = useRef();
 
-  // const handleSearchText = e => {
-  //   setSearchText(e.target.value);
-  // };
-
-  // const handleSearchSubmit = () => {
-  //   axios
-  //     .get(`https://jumoserver.ml/makgeolli/search?query=${searchText}`)
-  //     .then(res => {
-  //       setSearchItem(prev => {
-  //         return [...new Set([...prev, ...res.data.data])];
-  //       });
-  //     });
-  // };
+  const inputshow = () => {
+    if (document.getElementById('input').style.visibility === 'visible') {
+      searchText.current.value = '';
+      document.getElementById('input').style.visibility = 'hidden';
+    } else {
+      document.getElementById('input').style.visibility = 'visible';
+    }
+  };
 
   return (
     <Navbar>
@@ -45,6 +31,7 @@ const Header = ({ changeHandler, channel }) => {
           placeholder="검색어를 입력하세요"
           outline="none"
           onChange={changeHandler}
+          ref={searchText}
         />
         <Fi>
           <FiSearch size="24" color="#e7d1bf" onClick={inputshow} />

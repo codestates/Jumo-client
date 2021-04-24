@@ -20,7 +20,7 @@ import ReviewList from '../components/ReviewList';
 
 // import res from '../atoms/dummyMaks';
 
-const Detail = ({ channelHandler, navHeader, setNavHeader }) => {
+const Detail = ({ channelHandler, navHeader, setNavHeader, openHandler }) => {
   const [likeList, setLikeList] = useState([]);
   const [likeId, setLikeId] = useState([]);
   const accessToken = localStorage.getItem('accessToken');
@@ -221,7 +221,7 @@ const Detail = ({ channelHandler, navHeader, setNavHeader }) => {
             <StyleDescBottom>{item.explain}</StyleDescBottom>
           </StyleDescBox>
 
-          {!likeItems.includes(item.id) ? (
+          {!likeList.includes(item.id) ? (
             <D>
               <StyleLikeBtn onClick={() => handleLike()}>
                 <IconLike2 />
@@ -240,7 +240,7 @@ const Detail = ({ channelHandler, navHeader, setNavHeader }) => {
       </StyleSection>
 
 
-      <ReviewInput makgeolliId={item.id} setAllReviews={setAllReviews} />
+      <ReviewInput makgeolliId={item.id} setAllReviews={setAllReviews} openHandler={openHandler} />
       <ReviewList
         makgeolliId={item.id}
         allReivews={allReivews}
