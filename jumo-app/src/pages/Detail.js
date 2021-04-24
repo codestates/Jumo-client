@@ -238,12 +238,6 @@ const Detail = ({ channelHandler, navHeader, setNavHeader, openHandler }) => {
           )}
         </StyleVertical>
       </StyleSection>
-
-      <ReviewInput
-        makgeolliId={item.id}
-        setAllReviews={setAllReviews}
-        openHandler={openHandler}
-      />
       <ReviewList
         makgeolliId={item.id}
         allReivews={allReivews}
