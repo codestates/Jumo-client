@@ -6,7 +6,7 @@
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React%20Router&logoColor=red"/><img src="https://img.shields.io/badge/React_Router-red?style=for-the-badge"/>  
 
-<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React&logoColor=brightblue"/><img src="https://img.shields.io/badge/React_Hooks-blue?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Hexo&logoColor=brightblue"/><img src="https://img.shields.io/badge/Hooks-blue?style=for-the-badge"/>   
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Redux&logoColor=#764ABC"/><img src="https://img.shields.io/badge/Redux-hotpink?style=for-the-badge"/>   
 
