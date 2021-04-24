@@ -119,7 +119,7 @@ const MypageMyReviewBox = ({
   //! StarBox (컴포넌트) / StyleInput 추가
   return (
     <>
-      <MyReviewImg src={image} alt="makImg" />
+      {/* <MyReviewImg src={image} alt="makImg" /> */}
       <MyReviewContent>
         <MyReviewCreatedAt>
           {date} <StarBox star={star} />
