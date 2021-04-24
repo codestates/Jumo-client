@@ -8,7 +8,7 @@
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React&logoColor=brightblue"/><img src="https://img.shields.io/badge/React_Hooks-blue?style=for-the-badge"/>   
 
-<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Redux&logoColor=#764ABC"/><img src="https://img.shields.io/badge/Redux-#764ABC?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Redux&logoColor=#764ABC"/><img src="https://img.shields.io/badge/Redux-hotpink?style=for-the-badge"/>   
 
 ## Back   
 <img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Express&logoColor=white"/><img src="https://img.shields.io/badge/Express-lightgrey?style=for-the-badge"/>   
