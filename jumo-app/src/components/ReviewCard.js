@@ -91,7 +91,8 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
     setAllReviews(data);
   };
 
-  const onConfirm = () => {
+  const onConfirm = reviewId => {
+    removeReviews(reviewId);
     setDialog(false);
   };
 
@@ -109,10 +110,11 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   };
 
   const handleDelete = reviewId => {
-    if (window.confirm('정말 삭제하시겠습니까??') === false) {
-      return;
-    }
-    removeReviews(reviewId);
+    setDialog(true);
+    // if (window.confirm('정말 삭제하시겠습니까??') === false) {
+    //   return;
+    // }
+    // removeReviews(reviewId);
   };
 
   const handleUpdateSave = reviewId => {
@@ -162,14 +164,24 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
             )}
 
             {user_id === userInfo.id && !save ? (
-              <StyleModifyBox>
-                <StyleChangeBtn onClick={() => handleEdit()}>
-                  edit
-                </StyleChangeBtn>
-                <StyleChangeBtn onClick={() => handleDelete(id)}>
-                  delete
-                </StyleChangeBtn>
-              </StyleModifyBox>
+              <>
+                <StyleModifyBox>
+                  <StyleChangeBtn onClick={() => handleEdit()}>
+                    edit
+                  </StyleChangeBtn>
+                  <StyleChangeBtn onClick={() => handleDelete(id)}>
+                    delete
+                  </StyleChangeBtn>
+                </StyleModifyBox>
+                <Dialog
+                  title="정말 삭제하시겠습니까??"
+                  confirmText="확인"
+                  cancelText="취소"
+                  onConfirm={() => onConfirm(id)}
+                  onCancel={onCancel}
+                  visible={dialog}
+                />
+              </>
             ) : (
               ''
             )}
@@ -187,16 +199,16 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
           </StyleEffective>
         </StyleContents>
       </StyleReviewsBox>
-      <Dialog
+      {/* <Dialog
         title="정말 삭제하시겠습니까??"
         confirmText="확인"
         cancelText="취소"
-        onConfirm={onConfirm}
+        onConfirm={() => onConfirm(reviewId)}
         onCancel={onCancel}
         visible={dialog}
       >
         최소 2글자입니다.
-      </Dialog>
+      </Dialog> */}
     </>
   );
 };
