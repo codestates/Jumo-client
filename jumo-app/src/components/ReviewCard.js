@@ -6,6 +6,7 @@ import styled from 'styled-components';
 // import { removeReview, editReview } from '../actions';
 import server from '../apis/server';
 import StarIcon from './StarIcon';
+import Dialog from './Dialog';
 
 const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   const {
@@ -27,7 +28,7 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
   const [inputText, setInputText] = useState('');
   const [edit, setEdit] = useState(false);
   const [save, setSave] = useState(false);
-  const dispatch = useDispatch();
+  const [dialog, setDialog] = useState(false);
 
   const getUserInfo = async () => {
     try {
@@ -89,9 +90,14 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
 
     setAllReviews(data);
   };
-  useEffect(() => {
-    getUserInfo();
-  }, []);
+
+  const onConfirm = () => {
+    setDialog(false);
+  };
+
+  const onCancel = () => {
+    setDialog(false);
+  };
 
   const handleReview = e => {
     setInputText(e.target.value);
@@ -124,56 +130,74 @@ const ReviewCard = ({ review, setAllReviews, makgeolliId }) => {
     setSave(false);
   };
 
+  useEffect(() => {
+    getUserInfo();
+  }, []);
+
   return (
-    <StyleReviewsBox>
-      <StyleWriter>
-        <StyleNickname>{username}</StyleNickname>
-        <StyleStarBox>
-          {['a', 'b', 'c', 'd', 'e'].map((el, idx) => (
-            <StarIcon index={idx} star={star} key={el} />
-          ))}
-        </StyleStarBox>
-        <StyleCreated>{createdAt}</StyleCreated>
-      </StyleWriter>
-      <StyleContents>
-        {image !== '' && <StyleImg src={image} alt="유저 이미지" />}
-        <StyleEffective>
-          {edit ? (
-            <StyleInput
-              maxLength={300}
-              onChange={handleReview}
-              placeholder="리뷰를 입력해주세요(300자 이내)"
-            >
-              {comment}
-            </StyleInput>
-          ) : (
-            <StyleText>{comment}</StyleText>
-          )}
+    <>
+      <StyleReviewsBox>
+        <StyleWriter>
+          <StyleNickname>{username}</StyleNickname>
+          <StyleStarBox>
+            {['a', 'b', 'c', 'd', 'e'].map((el, idx) => (
+              <StarIcon index={idx} star={star} key={el} />
+            ))}
+          </StyleStarBox>
+          <StyleCreated>{createdAt}</StyleCreated>
+        </StyleWriter>
+        <StyleContents>
+          {image !== '' && <StyleImg src={image} alt="유저 이미지" />}
+          <StyleEffective>
+            {edit ? (
+              <StyleInput
+                maxLength={300}
+                onChange={handleReview}
+                placeholder="리뷰를 입력해주세요(300자 이내)"
+              >
+                {comment}
+              </StyleInput>
+            ) : (
+              <StyleText>{comment}</StyleText>
+            )}
 
-          {user_id === userInfo.id && !save ? (
-            <StyleModifyBox>
-              <StyleChangeBtn onClick={() => handleEdit()}>edit</StyleChangeBtn>
-              <StyleChangeBtn onClick={() => handleDelete(id)}>
-                delete
-              </StyleChangeBtn>
-            </StyleModifyBox>
-          ) : (
-            ''
-          )}
+            {user_id === userInfo.id && !save ? (
+              <StyleModifyBox>
+                <StyleChangeBtn onClick={() => handleEdit()}>
+                  edit
+                </StyleChangeBtn>
+                <StyleChangeBtn onClick={() => handleDelete(id)}>
+                  delete
+                </StyleChangeBtn>
+              </StyleModifyBox>
+            ) : (
+              ''
+            )}
 
-          {save && (
-            <StyleModifyBox>
-              <StyleChangeBtn onClick={() => handleUpdateSave(id)}>
-                save
-              </StyleChangeBtn>
-              <StyleChangeBtn onClick={() => handleUpdateCancel()}>
-                cancel
-              </StyleChangeBtn>
-            </StyleModifyBox>
-          )}
-        </StyleEffective>
-      </StyleContents>
-    </StyleReviewsBox>
+            {save && (
+              <StyleModifyBox>
+                <StyleChangeBtn onClick={() => handleUpdateSave(id)}>
+                  save
+                </StyleChangeBtn>
+                <StyleChangeBtn onClick={() => handleUpdateCancel()}>
+                  cancel
+                </StyleChangeBtn>
+              </StyleModifyBox>
+            )}
+          </StyleEffective>
+        </StyleContents>
+      </StyleReviewsBox>
+      <Dialog
+        title="정말 삭제하시겠습니까??"
+        confirmText="확인"
+        cancelText="취소"
+        onConfirm={onConfirm}
+        onCancel={onCancel}
+        visible={dialog}
+      >
+        최소 2글자입니다.
+      </Dialog>
+    </>
   );
 };
 
