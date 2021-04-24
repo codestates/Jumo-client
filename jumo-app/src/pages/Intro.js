@@ -159,6 +159,7 @@ const Section = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0;
+  background-color: #e7d1bf;
   /* border: 5px dashed orange; */
   width: 100vw;
   @media ${props => props.theme.tablet} {
@@ -173,8 +174,9 @@ const Section = styled.div`
     display: flex;
     flex-direction: row;
     margin: 0;
+    height
     width: 100vw;
-    padding-left: 76px;
+    padding-left: 5vw;
     background: #f2eeed;
   }
 `;
@@ -191,7 +193,7 @@ const StyledIntro = styled.div`
   @media ${props => props.theme.desktop} {
     display: flex;
     flex-direction: row;
-    padding-left: 76px;
+    padding-left: 5vw;
     width: 100vw;
   }
 `;
@@ -232,7 +234,7 @@ const StyledMainDiv = styled.li`
     flex-direction: column;
     background: #f2eeed;
     width: 55%;
-    padding: 3em;
+    padding: 3vw;
   }
 `;
 const MainDivCrop = styled.div`
@@ -300,7 +302,6 @@ const MainItem = styled.div`
     /* height: 100vh; */
     /* border: 10px dashed skyblue; */
     z-index: 0;
-    margin-top: 1em;
     animation-name: showItem;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -428,7 +429,7 @@ const MainDesc = styled.div`
   @media ${props => props.theme.desktop} {
     font-family: 'Nanum Gothic';
     display: inline-block;
-    height: 100vh;
+    height: 100%;
     font-size: 1.7em;
     color: #293848;
     padding: 3em 5em;
