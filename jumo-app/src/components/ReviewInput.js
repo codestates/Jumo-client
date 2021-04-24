@@ -136,7 +136,6 @@ const ReviewInput = ({ makgeolliId, setAllReviews, openHandler }) => {
         최소 2글자입니다.
       </Dialog>
     </>
-
   );
 };
 

@@ -183,7 +183,7 @@ const Detail = ({ channelHandler, navHeader, setNavHeader, openHandler }) => {
           <StyleDescBox>
             <StyleDescInfo>
               <div>
-                {!likeItems.includes(item.id) ? (
+                {!likeList.includes(item.id) ? (
                   <StyleSmallLikeBtn onClick={() => handleLike()}>
                     <IconLike2 />
                     {/* LIKE : {item.likes} */}
@@ -239,8 +239,11 @@ const Detail = ({ channelHandler, navHeader, setNavHeader, openHandler }) => {
         </StyleVertical>
       </StyleSection>
 
-
-      <ReviewInput makgeolliId={item.id} setAllReviews={setAllReviews} openHandler={openHandler} />
+      <ReviewInput
+        makgeolliId={item.id}
+        setAllReviews={setAllReviews}
+        openHandler={openHandler}
+      />
       <ReviewList
         makgeolliId={item.id}
         allReivews={allReivews}
