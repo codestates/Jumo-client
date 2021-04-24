@@ -5,12 +5,16 @@ import { FiSearch } from 'react-icons/fi';
 import res from '../atoms/dummyBrewery';
 
 const Brewerys = ({ channelHandler, navHeader, setNavHeader }) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  };
   const [mapImage, setMapImage] = useState('');
 
   useEffect(() => {
     if (!navHeader) {
       setNavHeader(true);
     }
+    scrollToTop();
     channelHandler('Brewery');
   }, []);
 
