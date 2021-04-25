@@ -4,7 +4,7 @@
 
 
 # :tada: 인트로
-- JUMO는 잊혀져가는 우리 술 <span style="color:red">막걸리 :sake:</span>에 관한 큐레이션 서비스
+- JUMO는 잊혀져가는 우리 술 <span style="color:red;font-weight:bold">막걸리</span> :sake:에 관한 큐레이션 서비스
 
 
 # :gift_heart: 서비스소개
