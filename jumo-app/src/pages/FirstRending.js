@@ -3,7 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { Link, withRouter, useHistory } from 'react-router-dom';
 import { FiArrowUp } from 'react-icons/fi';
 import photo from '../images/BreweyMini.jpeg';
-import brew from '../images/SodaPDF-converted-Brewery.png';
+import brew from '../images/양조장-데스크탑.gif';
 
 function FirstRending() {
   const animatedbang = keyframes`
