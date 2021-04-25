@@ -1,4 +1,5 @@
 [<img src="https://img.shields.io/badge/PROJECT-jumo.ml-red?style=for-the-badge"/>](https://www.jumo.ml/)
+----
 
 # :wrench: 스택
 ![stack](https://user-images.githubusercontent.com/47580931/115976663-2f826f00-a5ab-11eb-9939-599b30120aa0.png)
