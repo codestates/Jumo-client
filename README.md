@@ -2,7 +2,7 @@
 ----
 
 # :wrench: 스택
-![stack](https://user-images.githubusercontent.com/47580931/115976806-ad934580-a5ac-11eb-9546-302223707da6.png)
+![stack](https://user-images.githubusercontent.com/47580931/115977009-702fb780-a5ae-11eb-8b77-c827e66fdf97.png)
 
 ## :gem: Front
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React&logoColor=61DAFB"/><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge"/>   
