@@ -1,7 +1,7 @@
 [<img src="https://img.shields.io/badge/PROJECT-jumo.ml-red?style=for-the-badge"/>](https://www.jumo.ml/)
 
 # 스택
-![stack]<img width="801" alt="스크린샷 2021-04-25 오전 9 46 59" src="https://user-images.githubusercontent.com/47580931/115976663-2f826f00-a5ab-11eb-9939-599b30120aa0.png">
+![stack](https://user-images.githubusercontent.com/47580931/115976663-2f826f00-a5ab-11eb-9939-599b30120aa0.png)
 
 ## Front
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React&logoColor=61DAFB"/><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge"/>   
