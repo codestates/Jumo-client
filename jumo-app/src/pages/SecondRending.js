@@ -4,9 +4,9 @@ import styled, { keyframes } from 'styled-components';
 import { Link, withRouter, useHistory } from 'react-router-dom';
 import { FiArrowDown } from 'react-icons/fi';
 import photo from '../images/sideA.png';
-import Top1p from '../images/SodaPDF-converted-베스트막거리 케러셀.png';
-import Top2p from '../images/SodaPDF-converted-막걸리 인피니트 스크롤.png';
-import Top3p from '../images/SodaPDF-converted-막걸리 반응형.png';
+import Top1p from '../images/막걸리상세페이지-데스크탑.gif';
+import Top2p from '../images/베스트막걸리캐러셀n인피니티-데스크탑.gif';
+import Top3p from '../images/막걸리상세페이지최종-모바일.gif';
 
 const SecondRending = () => {
   const animatedbang = keyframes`
@@ -250,7 +250,7 @@ const SecondRending = () => {
         <Div>
           다양한 막걸리를 구경하고 맛보고 평점을 주세요!
           <br />
-          30만 주당유저들과 함께 여러분들의 최고의 막거리를 소개해주세요!
+          데스크탑에서도, 쇼파에 누워서 ipad, 핸드폰으로도 편하게 즐겨보세요!
           <br />
         </Div>
         <Top>
