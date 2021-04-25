@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';
 import { Link, withRouter, useHistory } from 'react-router-dom';
 import { FiArrowUp } from 'react-icons/fi';
 import photo from '../images/BreweyMini.jpeg';
+import brew from '../images/SodaPDF-converted-Brewery.png';
 
 function FirstRending() {
   const animatedbang = keyframes`
@@ -89,14 +90,13 @@ function FirstRending() {
       transition-duration: 0.5s;
     }
   `;
-  const Gif = styled.div`
+  const Gif = styled.img`
     position: relative;
     width: 30vw;
     height: 40vh;
     left: 12%;
     top: 20%;
     border-radius: 10px;
-    background-color: blue;
     transition-duration: 1s;
     z-index: 1;
     @media ${props => props.theme.tablet} {
@@ -105,7 +105,6 @@ function FirstRending() {
       top: 20%;
       width: 40vw;
       height: 44vh;
-      background-color: blue;
       transition-duration: 1s;
       z-index: 1;
       &:hover {
@@ -120,7 +119,7 @@ function FirstRending() {
       <Link to="/brewery/info">
         <FirstTitle>Brewerys</FirstTitle>
         <Photo src={photo} alt="photo" />
-        <Gif />
+        <Gif src={brew} alt="photo" />
       </Link>
       <Top onClick={scrollToTop}>
         <FiArrowUp size="40" />
