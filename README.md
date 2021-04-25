@@ -10,7 +10,7 @@
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React%20Router&logoColor=CA4245"/><img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge"/>  
 
-<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=styled-components&logoColor=DB7093"/><img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge"/>  
+<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=styled-components&logoColor=FF61F6"/><img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge"/>  
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=JavaScript&logoColor=F7DF1E"/><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge"/>  
 
@@ -41,7 +41,7 @@
 
 <img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Revolut&logoColor=0075EB"/><img src="https://img.shields.io/badge/Route53-0075EB?style=for-the-badge"/>   
 
-<img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=PM2&logoColor=2B037A"/><img src="https://img.shields.io/badge/PM2-2B037A?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=PM2&logoColor=246FDB"/><img src="https://img.shields.io/badge/PM2-2B037A?style=for-the-badge"/>   
 
 <img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=iCloud&logoColor=3693F3"/><img src="https://img.shields.io/badge/cloudFront-3693F3?style=for-the-badge"/>   
 
