@@ -21,7 +21,14 @@
   
   
 
+# :surfer: Flow Chart
 
+## :baby_chick: Client
+![Client](https://user-images.githubusercontent.com/47580931/113663311-c4005c80-96e4-11eb-95ea-0f43244c3cc8.png)
+
+
+## :octocat: Server
+![Jumo](https://user-images.githubusercontent.com/47580931/113549486-7cb69500-962c-11eb-9071-a1e42e77d808.jpg)
 
 
 # :wrench: 스택
