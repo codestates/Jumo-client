@@ -28,9 +28,9 @@
 
 
 
-# 와이어 프레임
+# :pencil2: 와이어 프레임863
 <img width="692" alt="스크린샷 2021-04-06 오후 4 02 53" src="https://user-images.githubusercontent.com/47580931/113671916-f5335980-96f1-11eb-9a18-52172dd173bc.png">
-<img width="863" alt="스크린샷 2021-04-06 오후 5 25 35" src="https://user-images.githubusercontent.com/47580931/113681976-95db4680-96fd-11eb-9bb4-410243eebb29.png">
+<img width="692" alt="스크린샷 2021-04-06 오후 5 25 35" src="https://user-images.githubusercontent.com/47580931/113681976-95db4680-96fd-11eb-9bb4-410243eebb29.png">
   
   
   
