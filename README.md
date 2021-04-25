@@ -25,9 +25,9 @@
 ![stack](https://user-images.githubusercontent.com/47580931/115977009-702fb780-a5ae-11eb-8b77-c827e66fdf97.png)
 
 ## :gem: Front
-<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React&logoColor=61DAFB"/><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/React-black?style=for-the-badge&logo=React&logoColor=61DAFB"/>
 
-<img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Hexo&logoColor=blue"/><img src="https://img.shields.io/badge/Hooks-blue?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/Hooks-black?style=for-the-badge&logo=Hexo&logoColor=blue"/>
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Redux&logoColor=764ABC"/><img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge"/>   
 
