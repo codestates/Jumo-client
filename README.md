@@ -36,11 +36,11 @@
 
 # :surfer: Flow Chart
 
-### :baby_chick: Client
+### &nbsp;&nbsp;&nbsp;&nbsp;:baby_chick: Client
 ![Client](https://user-images.githubusercontent.com/47580931/113663311-c4005c80-96e4-11eb-95ea-0f43244c3cc8.png)
 
 
-### :octocat: Server
+### &nbsp;&nbsp;&nbsp;&nbsp;:octocat: Server
 ![Jumo](https://user-images.githubusercontent.com/75592608/115981121-8ba9bb00-a5cc-11eb-8458-012a54ae8e8e.png)
 
 
@@ -49,9 +49,9 @@
 # :wrench: 스택
 ![stack](https://user-images.githubusercontent.com/47580931/115977009-702fb780-a5ae-11eb-8b77-c827e66fdf97.png)
 
-&nbsp;&nbsp;&nbsp;&nbsp;### &nbsp;&nbsp;&nbsp;&nbsp;:gem: Front
+### &nbsp;&nbsp;&nbsp;&nbsp;:gem: Front
 <img src="https://img.shields.io/badge/React-black?style=for-the-badge&logo=React&logoColor=61DAFB"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Hooks-black?style=for-the-badge&logo=Hexo&logoColor=blue"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Redux-black?style=for-the-badge&logo=Redux&logoColor=764ABC"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/React_Router-black?style=for-the-badge&logo=React%20Router&logoColor=CA4245"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/styled--components-black?style=for-the-badge&logo=styled-components&logoColor=FF61F6"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=JavaScript&logoColor=F7DF1E"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/HTML5-black?style=for-the-badge&logo=HTML5&logoColor=E34F26"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/CSS3-black?style=for-the-badge&logo=CSS3&logoColor=1572B6"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Figma-black?style=for-the-badge&logo=Figma&logoColor=F24E1E"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Prettier-black?style=for-the-badge&logo=Prettier&logoColor=F7B93E"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/ESlint-black?style=for-the-badge&logo=ESlint&logoColor=4B32C3"/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;### &nbsp;&nbsp;&nbsp;&nbsp;:tophat: Back   
+### &nbsp;&nbsp;&nbsp;&nbsp;:tophat: Back   
 <img src="https://img.shields.io/badge/MySQL-black?style=for-the-badge&logo=MySQL&logoColor=white"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Sequelize-black?style=for-the-badge&logo=Sega&logoColor=0089CF"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20Web%20Tokens&logoColor=white"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/bcrypt-black?style=for-the-badge&logo=Big%20Cartel&logoColor=yellowgreen"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Express-black?style=for-the-badge&logo=Express&logoColor=lightgrey"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Node.js-black?style=for-the-badge&logo=Node.js&logoColor=green"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Amazon%20AWS-black?style=for-the-badge&logo=Amazon%20AWS&logoColor=orange"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Amazon%20S3-black?style=for-the-badge&logo=Amazon%20S3&logoColor=yellowgreen"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/EC2-black?style=for-the-badge&logo=Etsy&logoColor=F16521"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/RDS-black?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=B366F6"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Route53-black?style=for-the-badge&logo=Revolut&logoColor=0075EB"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/PM2-black?style=for-the-badge&logo=PM2&logoColor=246FDB"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/cloudFront-black?style=for-the-badge&logo=iCloud&logoColor=3693F3"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/ELB-black?style=for-the-badge&logo=Elm&logoColor=1293D8"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Certificate%20Manager-black?style=for-the-badge&logo=Google%20Tag%20Manager&logoColor=246FDB"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=JavaScript&logoColor=F7DF1E"/>
 
