@@ -28,7 +28,7 @@
 
 
 ### :octocat: Server
-![Jumo](https://user-images.githubusercontent.com/47580931/113549486-7cb69500-962c-11eb-9071-a1e42e77d808.jpg)
+![Jumo](https://user-images.githubusercontent.com/75592608/115981121-8ba9bb00-a5cc-11eb-8458-012a54ae8e8e.png)
 
 
 # :wrench: 스택
