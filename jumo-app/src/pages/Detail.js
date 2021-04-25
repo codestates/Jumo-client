@@ -18,8 +18,6 @@ import server from '../apis/server';
 import ReviewInput from '../components/ReviewInput';
 import ReviewList from '../components/ReviewList';
 
-// import res from '../atoms/dummyMaks';
-
 const Detail = ({ channelHandler, navHeader, setNavHeader, openHandler }) => {
   const [likeList, setLikeList] = useState([]);
   const [likeId, setLikeId] = useState([]);
@@ -136,6 +134,7 @@ const Detail = ({ channelHandler, navHeader, setNavHeader, openHandler }) => {
   };
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
     if (!navHeader) {
       setNavHeader(true);
     }
@@ -238,6 +237,11 @@ const Detail = ({ channelHandler, navHeader, setNavHeader, openHandler }) => {
           )}
         </StyleVertical>
       </StyleSection>
+      <ReviewInput
+        makgeolliId={item.id}
+        setAllReviews={setAllReviews}
+        openHandler={openHandler}
+      />
       <ReviewList
         makgeolliId={item.id}
         allReivews={allReivews}
