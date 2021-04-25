@@ -3,17 +3,17 @@
 ![](https://images.velog.io/images/delilah/post/7bc1833f-52a8-4632-9663-ef5a0c9da5c2/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7,%202021-04-25%2002-53-21.png)
 
 
-# 1. :tada: 인트로
+# :tada: 인트로
 - JUMO는 잊혀져가는 우리 술 <span style="color:red">막걸리 :sake:</span>에 관한 큐레이션 서비스
 
 
-# 2. :gift_heart: 서비스소개
+# :gift_heart: 서비스소개
 1. 막걸리 검색기능과 더불어 약 50여가지의 엄선한 막걸리 종류를 한 눈에 파악할 수 있습니다.
 2. 막걸리에 대한 기본 정보와 기존 사용자들의 생생한 리뷰와 별점, 좋아요, 조회수를 확인할 수 있습니다.
 3. 회원가입을 통해 리뷰를 작성할 수 있으며, 리뷰의 수정과 삭제, 찜한 막걸리의 확인과 삭제 기능을 제공합니다.
 4. 양조장의 위치를 지도로 표시하며, 검색기능을 추가하여 사용자가 원하는 위치의 양조장을 검색해줍니다.
 
-# 3. :star: 웹사이트
+# :star: 웹사이트
 `gif-렌딩 only`. 
 
 
@@ -21,7 +21,7 @@
 
 
 
-# 4.  :wrench: 스택
+# :wrench: 스택
 ![stack](https://user-images.githubusercontent.com/47580931/115977009-702fb780-a5ae-11eb-8b77-c827e66fdf97.png)
 
 ## :gem: Front
