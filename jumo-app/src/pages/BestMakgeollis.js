@@ -194,7 +194,6 @@ const StyleTitle = styled.div`
   display: flex;
   font-size: 3.5rem;
   position: relative;
-  top: 20%;
   /* text-align: center; */
   color: white;
   font-weight: bolder;
