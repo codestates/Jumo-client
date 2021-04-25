@@ -58,6 +58,7 @@ const Mypage = ({ channelHandler, navHeader, setNavHeader }) => {
   };
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
     if (!navHeader) {
       setNavHeader(true);
     }

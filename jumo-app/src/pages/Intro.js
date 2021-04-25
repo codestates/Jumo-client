@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 import styled, { css } from 'styled-components';
 // eslint-disable-next-line import/no-cycle
-import Nav from './Nav';
-
-import large from '../images/larghmak.jpg';
 import st from '../images/1.png';
 import nd from '../images/2.png';
 import rd from '../images/3.png';
@@ -13,10 +10,8 @@ import s from '../images/s.jpg';
 import j from '../images/j.jpg';
 
 function Intro({ channelHandler, navHeader, setNavHeader }) {
-  // const introSec1 = IntroSec1;
-  // const logo = Logo;
-
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
     if (!navHeader) {
       setNavHeader(true);
     }
@@ -174,7 +169,7 @@ const Section = styled.div`
     display: flex;
     flex-direction: row;
     margin: 0;
-    height
+    /* height */
     width: 100vw;
     padding-left: 5vw;
     background: #f2eeed;
