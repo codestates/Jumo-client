@@ -21,10 +21,10 @@
 
 
 # :family: Author
-&nbsp;&nbsp;&nbsp;&nbsp;#### :sunglasses:  [신희국](https://github.com/hgsignal) <img src="https://img.shields.io/badge/-Front--End-red"/> <img src="https://img.shields.io/badge/-Captain-yellow"/>
-&nbsp;&nbsp;&nbsp;&nbsp;#### :ghost:  [이정은](https://github.com/jungeundelilahLEE) <img src="https://img.shields.io/badge/-Front--End-red"/>
-&nbsp;&nbsp;&nbsp;&nbsp;#### :smirk_cat:  [이제경](https://github.com/jeon-seongjae) <img src="https://img.shields.io/badge//-Front--End-red"/>
-&nbsp;&nbsp;&nbsp;&nbsp;#### :smiling_imp:  [전성재](https://github.com/jejelee94) <img src="https://img.shields.io/badge/-Back--End-9cf"/>
+#### &nbsp;&nbsp;&nbsp;&nbsp; :sunglasses:  [신희국](https://github.com/hgsignal) <img src="https://img.shields.io/badge/-Front--End-red"/> <img src="https://img.shields.io/badge/-Captain-yellow"/>
+#### &nbsp;&nbsp;&nbsp;&nbsp; :ghost:  [이정은](https://github.com/jungeundelilahLEE) <img src="https://img.shields.io/badge/-Front--End-red"/>
+#### &nbsp;&nbsp;&nbsp;&nbsp; :smirk_cat:  [이제경](https://github.com/jeon-seongjae) <img src="https://img.shields.io/badge//-Front--End-red"/>
+#### &nbsp;&nbsp;&nbsp;&nbsp; :smiling_imp:  [전성재](https://github.com/jejelee94) <img src="https://img.shields.io/badge/-Back--End-9cf"/>
 
 
 
