@@ -20,11 +20,7 @@
 `gif-렌딩 only`. 
 
 
-# :family: Author
-#### &nbsp;&nbsp;&nbsp;&nbsp; :sunglasses:  [신희국](https://github.com/hgsignal) <img src="https://img.shields.io/badge/-Front--End-red"/> <img src="https://img.shields.io/badge/-Captain-yellow"/>
-#### &nbsp;&nbsp;&nbsp;&nbsp; :ghost:  [이정은](https://github.com/jungeundelilahLEE) <img src="https://img.shields.io/badge/-Front--End-red"/>
-#### &nbsp;&nbsp;&nbsp;&nbsp; :smirk_cat:  [이제경](https://github.com/jeon-seongjae) <img src="https://img.shields.io/badge//-Front--End-red"/>
-#### &nbsp;&nbsp;&nbsp;&nbsp; :smiling_imp:  [전성재](https://github.com/jejelee94) <img src="https://img.shields.io/badge/-Back--End-9cf"/>
+
 
 
 
@@ -55,4 +51,10 @@
 
 ### :tophat: Back   
 <img src="https://img.shields.io/badge/MySQL-black?style=for-the-badge&logo=MySQL&logoColor=white"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Sequelize-black?style=for-the-badge&logo=Sega&logoColor=0089CF"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20Web%20Tokens&logoColor=white"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/bcrypt-black?style=for-the-badge&logo=Big%20Cartel&logoColor=yellowgreen"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Express-black?style=for-the-badge&logo=Express&logoColor=lightgrey"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Node.js-black?style=for-the-badge&logo=Node.js&logoColor=green"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Amazon%20AWS-black?style=for-the-badge&logo=Amazon%20AWS&logoColor=orange"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Amazon%20S3-black?style=for-the-badge&logo=Amazon%20S3&logoColor=yellowgreen"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/EC2-black?style=for-the-badge&logo=Etsy&logoColor=F16521"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/RDS-black?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=B366F6"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Route53-black?style=for-the-badge&logo=Revolut&logoColor=0075EB"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/PM2-black?style=for-the-badge&logo=PM2&logoColor=246FDB"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/cloudFront-black?style=for-the-badge&logo=iCloud&logoColor=3693F3"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/ELB-black?style=for-the-badge&logo=Elm&logoColor=1293D8"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/Certificate%20Manager-black?style=for-the-badge&logo=Google%20Tag%20Manager&logoColor=246FDB"/>&nbsp;&nbsp;&nbsp;<img src="https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=JavaScript&logoColor=F7DF1E"/>
+
+# :family: Author
+#### &nbsp;&nbsp;&nbsp;&nbsp; :sunglasses:  [신희국](https://github.com/hgsignal) <img src="https://img.shields.io/badge/-Front--End-red"/> <img src="https://img.shields.io/badge/-Captain-yellow"/>
+#### &nbsp;&nbsp;&nbsp;&nbsp; :ghost:  [이정은](https://github.com/jungeundelilahLEE) <img src="https://img.shields.io/badge/-Front--End-red"/>
+#### &nbsp;&nbsp;&nbsp;&nbsp; :smirk_cat:  [이제경](https://github.com/jeon-seongjae) <img src="https://img.shields.io/badge//-Front--End-red"/>
+#### &nbsp;&nbsp;&nbsp;&nbsp; :smiling_imp:  [전성재](https://github.com/jejelee94) <img src="https://img.shields.io/badge/-Back--End-9cf"/>
 
