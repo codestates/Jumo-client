@@ -23,7 +23,7 @@
 
 <img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Sega&logoColor=0089CF"/><img src="https://img.shields.io/badge/Sequelize-0089CF?style=for-the-badge"/>   
 
-<img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Jsoon%20Web%20Tokens&logoColor=white"/><img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge"/>   
+<img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Jsoon&nbsp;Web&nbsp;Tokens&logoColor=white"/><img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge"/>   
 
 <img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Express&logoColor=lightgrey"/><img src="https://img.shields.io/badge/Express-lightgrey?style=for-the-badge"/>   
 
