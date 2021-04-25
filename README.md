@@ -15,9 +15,22 @@
 4. 양조장의 위치를 지도로 표시하며, 검색기능을 추가하여 사용자가 원하는 위치의 양조장을 검색해줍니다.
   
   
+  
 # :star: 웹사이트
 `gif-렌딩 only`. 
 
+
+# :family: Author
+#### :sunglasses:  [신희국](https://github.com/hgsignal) <img src="https://img.shields.io/badge/-Front--End-red"/> <img src="https://img.shields.io/badge/-Captain-yellow"/>
+#### :ghost:  [이정은](https://github.com/jungeundelilahLEE) <img src="https://img.shields.io/badge/-Front--End-red"/>
+#### :smirk_cat:  [이제경](https://github.com/jeon-seongjae) <img src="https://img.shields.io/badge//-Front--End-red"/>
+#### :smiling_imp:  [전성재](https://github.com/jejelee94) <img src="https://img.shields.io/badge/-Back--End-9cf"/>
+
+
+
+# 와이어 프레임
+  
+  
   
   
 
@@ -29,6 +42,8 @@
 
 ### :octocat: Server
 ![Jumo](https://user-images.githubusercontent.com/75592608/115981121-8ba9bb00-a5cc-11eb-8458-012a54ae8e8e.png)
+
+
 
 
 # :wrench: 스택
