@@ -1,9 +1,9 @@
 [<img src="https://img.shields.io/badge/PROJECT-jumo.ml-red?style=for-the-badge"/>](https://www.jumo.ml/)
 
-# :wrench:스택
+# :wrench: 스택
 ![stack](https://user-images.githubusercontent.com/47580931/115976663-2f826f00-a5ab-11eb-9939-599b30120aa0.png)
 
-## :gem:Front
+## :gem: Front
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=React&logoColor=61DAFB"/><img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge"/>   
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=Hexo&logoColor=blue"/><img src="https://img.shields.io/badge/Hooks-blue?style=for-the-badge"/>   
@@ -20,7 +20,7 @@
 
 <img src="https://img.shields.io/badge/Front-black?style=for-the-badge&logo=CSS3&logoColor=1572B6"/><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge"/>  
 
-## :tophat:Back   
+## :tophat: Back   
 <img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=MySQL&logoColor=white"/><img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge"/>   
 
 <img src="https://img.shields.io/badge/Back-black?style=for-the-badge&logo=Sega&logoColor=0089CF"/><img src="https://img.shields.io/badge/Sequelize-0089CF?style=for-the-badge"/>   
