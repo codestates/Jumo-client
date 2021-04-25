@@ -244,7 +244,7 @@ const StyleResult = styled.div`
 `;
 
 const StyleInfo = styled.div`
-  line-height: 25px;
+  line-height: 5vh;
   margin: 2vh;
   padding-bottom: 3px;
   width: 100%;
