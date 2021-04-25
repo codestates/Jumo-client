@@ -4,6 +4,9 @@ import styled, { keyframes } from 'styled-components';
 import { Link, withRouter, useHistory } from 'react-router-dom';
 import { FiArrowDown } from 'react-icons/fi';
 import photo from '../images/sideA.png';
+import Top1p from '../images/SodaPDF-converted-베스트막거리 케러셀.png';
+import Top2p from '../images/SodaPDF-converted-막걸리 인피니트 스크롤.png';
+import Top3p from '../images/SodaPDF-converted-막걸리 반응형.png';
 
 const SecondRending = () => {
   const animatedbang = keyframes`
@@ -191,44 +194,41 @@ const SecondRending = () => {
       justify-content: space-between;
     }
   `;
-  const Top1 = styled.div`
-    width: 40vw;
+  const Top1 = styled.img`
+    width: 30vw;
     height: 29vh;
-    border: 1px solid black;
     @media ${props => props.theme.tablet} {
-      width: 40vw;
+      width: 25vw;
       height: 29vh;
-      border: 1px solid black;
       transition-duration: 1s;
       &:hover {
-        width: 44vw;
+        width: 23vw;
         height: 31vh;
       }
     }
   `;
-  const Top2 = styled.div`
-    width: 40vw;
+  const Top2 = styled.img`
+    width: 30vw;
     height: 29vh;
-    border: 1px solid black;
     @media ${props => props.theme.tablet} {
-      width: 40vw;
+      width: 25vw;
       height: 29vh;
-      border: 1px solid black;
       transition-duration: 1s;
       &:hover {
-        width: 44vw;
+        width: 23vw;
         height: 31vh;
       }
     }
   `;
-  const Top3 = styled.div`
-    @media ${props => props.theme.tablet} {
-      width: 40vw;
+  const Top3 = styled.img`
+    width: 0vw;
+    height: 0vh;
+    @media ${props => props.theme.desktop} {
+      width: 10vw;
       height: 29vh;
-      border: 1px solid black;
       transition-duration: 1s;
       &:hover {
-        width: 44vw;
+        width: 12vw;
         height: 31vh;
       }
     }
@@ -254,9 +254,9 @@ const SecondRending = () => {
           <br />
         </Div>
         <Top>
-          <Top1 />
-          <Top2 />
-          <Top3 />
+          <Top1 src={Top1p} alt="photo" />
+          <Top2 src={Top2p} alt="photo" />
+          <Top3 src={Top3p} alt="photo" />
         </Top>
         <Link to="/makgeolli/info">
           <More>다른 막걸리 보러가기</More>
