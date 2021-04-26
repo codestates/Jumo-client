@@ -17,8 +17,10 @@
   
   
 # :star: 웹사이트
-`gif-렌딩 only`. 
-
+<img width="80%" src="https://user-images.githubusercontent.com/75482120/116016213-f0215480-a676-11eb-811e-f06a53324093.gif"/>  
+ <br/>
+ <br/>
+ <img width="80%" src="https://user-images.githubusercontent.com/75482120/115985416-bef94380-a5e6-11eb-9b4f-45dc7e98bf47.gif"/>
 
 
 
