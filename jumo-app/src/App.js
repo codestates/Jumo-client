@@ -120,6 +120,8 @@ const App = () => {
       />
       <Switch>
         <Route exact path="/">
+          <Header changeHandler={changeHandler} channel={channel} />
+          <Nav openHandler={openHandler} />
           <Rending navHeader={navHeader} setNavHeader={setNavHeader} />
         </Route>
 

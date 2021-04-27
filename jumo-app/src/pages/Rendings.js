@@ -16,9 +16,6 @@ const Rending = () => {
         <div {...useScrollFadeIn('up', 1, 0)}>
           <SecondRending />
         </div>
-        <div {...useScrollFadeIn('left', 1, 0)}>
-          <FirstRending />
-        </div>
       </Background>
     </>
   );
@@ -30,15 +27,10 @@ const Background = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  z-index: 200;
+  z-index: 0;
   top: 0;
   left: 0;
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 51, 0.4),
-      rgba(100, 0, 0, 0.3)
-    ),
-    url(${background});
+  background-color: #e7d1bf;
   background-size: cover;
   width: auto;
   height: auto;
@@ -50,12 +42,8 @@ const Background = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 51, 0.4),
-        rgba(100, 0, 0, 0.3)
-      ),
-      url(${background});
+    z-index: 0;
+    background-color: #e7d1bf;
     background-size: cover;
     width: auto;
     height: auto;
@@ -68,12 +56,8 @@ const Background = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 51, 0.4),
-        rgba(100, 0, 0, 0.3)
-      ),
-      url(${background});
+    z-index: 0;
+    background-color: #e7d1bf;
     background-size: cover;
     width: auto;
     height: auto;
