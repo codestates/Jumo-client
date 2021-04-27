@@ -60,7 +60,7 @@ const Navbar = styled.div`
   background-color: #293848;
   width: 100%;
   height: 50px;
-  z-index: 5;
+  z-index: 200;
 `;
 const Input = styled.input`
   visibility: visible;

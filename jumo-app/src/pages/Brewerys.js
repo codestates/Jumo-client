@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FiSearch } from 'react-icons/fi';
 import server from '../apis/server';
+
 // import res from '../atoms/dummyBrewery';
 
 const Brewerys = ({ channelHandler, navHeader, setNavHeader }) => {

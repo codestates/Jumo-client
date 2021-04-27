@@ -31,6 +31,7 @@ const SecondRending = () => {
     margin-top: 0.5vw;
     width: 100vw;
     height: 100vh;
+    padding-left: 10vw;
   `;
   const Makgeolli = styled.h1`
     color: white;
@@ -98,24 +99,6 @@ const SecondRending = () => {
       }
     }
   `;
-  const Speaking = styled.div`
-    display: none;
-    @media ${props => props.theme.tablet} {
-      display: none;
-    }
-    @media ${props => props.theme.desktop} {
-      display: flex;
-      position: absolute;
-      top: 40%;
-      right: 3%;
-      width: 20vw;
-      height: 40vh;
-      transition-duration: 1s;
-      &:hover {
-        transform: translate(-10px, -10px);
-      }
-    }
-  `;
   const InnerContent = styled.h2`
     display: flex;
     flex-direction: column;
@@ -165,22 +148,6 @@ const SecondRending = () => {
       transition-duration: 1s;
       &:hover {
         transform: translateX(10px) translateY(-10px);
-      }
-    }
-  `;
-  const Brewerys = styled.div`
-    color: white;
-    text-align: center;
-    padding-top: 3vh;
-    animation: ${animatedbang} 2s infinite;
-    @media ${props => props.theme.tablet} {
-      color: white;
-      text-align: center;
-      cursor: pointer;
-      transition-duration: 1s;
-      animation: ${animatedbang} 2s infinite;
-      &:hover {
-        color: #293848;
       }
     }
   `;
@@ -262,12 +229,6 @@ const SecondRending = () => {
           <More>다른 막걸리 보러가기</More>
         </Link>
       </InnerContent>
-      <Speaking>
-        <img src={photo} alt="sideA" />
-      </Speaking>
-      <Brewerys onClick={toBre}>
-        <FiArrowDown size="40" />
-      </Brewerys>
     </SecondChapter>
   );
 };

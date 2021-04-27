@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link, withRouter, useHistory } from 'react-router-dom';
 import { FiArrowUp } from 'react-icons/fi';
-import photo from '../images/BreweyMini.jpeg';
 import brew from '../images/양조장-데스크탑.gif';
 
 function FirstRending() {
@@ -21,6 +20,7 @@ function FirstRending() {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-left: 10vw;
     width: 100vw;
     height: 100vh;
   `;
@@ -67,31 +67,7 @@ function FirstRending() {
       color: #293848;
     }
   `;
-  const Photo = styled.img`
-    width: 72vw;
-    height: 50vh;
-    position: absolute;
-    margin-top: 3vw;
-    font-family: 'Sansation';
-    top: 25%;
-    left: 15%;
-    z-index: 0;
-    border-radius: 30px;
-    transition-duration: 0.5s;
-    @media ${props => props.theme.tablet} {
-      width: 60vw;
-      height: 60vh;
-      color: white;
-      position: absolute;
-      top: 25%;
-      left: 20%;
-      z-index: 0;
-      border-radius: 30px;
-      transition-duration: 0.5s;
-    }
-  `;
   const Gif = styled.img`
-    position: relative;
     width: 30vw;
     height: 40vh;
     left: 12%;
@@ -100,27 +76,57 @@ function FirstRending() {
     transition-duration: 1s;
     z-index: 1;
     @media ${props => props.theme.tablet} {
-      position: relative;
       left: 30%;
       top: 20%;
-      width: 40vw;
-      height: 44vh;
+      width: 30vw;
+      height: 34vh;
       transition-duration: 1s;
       z-index: 1;
       &:hover {
         padding-right: 1vw;
-        width: 42vw;
-        height: 42vh;
+        width: 32vw;
+        height: 32vh;
       }
     }
   `;
+  const Text = styled.div`
+    font-size: 3vw;
+    width: 50vw;
+  `;
+  const But = styled.button`
+    background-color: rgba(255, 100, 100, 1);
+    font-family: 'Nanum Gothic';
+    color: white;
+    float: right;
+    text-align: center;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    margin: 1vw;
+  `;
+  const Content = styled.div`
+    display: flex;
+    justify-content: space-between;
+  `;
   return (
     <FirstChapter>
-      <Link to="/brewery/info">
-        <FirstTitle>Brewerys</FirstTitle>
-        <Photo src={photo} alt="photo" />
-        <Gif src={brew} alt="photo" />
-      </Link>
+      <FirstTitle>Brewerys</FirstTitle>
+      <Content>
+        <div>
+          <Text>
+            {' '}
+            전국의 모든 양조장을 검색하고 직접찾아가보세요!
+            <br /> 직접찾아가서 마셔보면 맛이 2배!
+          </Text>
+          <Link to="/brewery/info">
+            <But type="button">지금 검색하러 가기</But>
+          </Link>
+        </div>
+        <div>
+          <Gif src={brew} alt="photo" />
+        </div>
+      </Content>
       <Top onClick={scrollToTop}>
         <FiArrowUp size="40" />
       </Top>
