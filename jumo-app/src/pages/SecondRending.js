@@ -2,21 +2,11 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link, withRouter, useHistory } from 'react-router-dom';
-import { FiArrowDown } from 'react-icons/fi';
-import photo from '../images/sideA.png';
 import Top1p from '../images/막걸리상세페이지-데스크탑.gif';
 import Top2p from '../images/베스트막걸리캐러셀n인피니티-데스크탑.gif';
 import Top3p from '../images/막걸리상세페이지최종-모바일.gif';
 
 const SecondRending = () => {
-  const animatedbang = keyframes`
-
-  0%{transform:translateY(10px);}
-  
-  50%{transform:translateY(-20px);}
-  
-  100%{transform:translateY(10px);}
-  `;
   const contentSlide = keyframes`
     from {
       transform: translateX(-1200px);
@@ -34,69 +24,35 @@ const SecondRending = () => {
     padding-left: 10vw;
   `;
   const Makgeolli = styled.h1`
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding: 1vw;
     color: white;
     font-family: 'Sansation';
     font-weight: lighter;
     width: 50vw;
-    padding: 1vw;
     font-size: 10vw;
     transition-duration: 1s;
-    @media ${props => props.theme.tablet} {
-      padding: 1vw;
-      color: white;
-      font-family: 'Sansation';
-      font-weight: lighter;
-      width: 50vw;
-      font-size: 10vw;
-      transition-duration: 1s;
-      &:hover {
-        font-size: 12vw;
-      }
-    }
-    @media ${props => props.theme.desktop} {
-      padding: 1vw;
-      color: white;
-      font-family: 'Sansation';
-      font-weight: lighter;
-      width: 50vw;
-      font-size: 10vw;
-      transition-duration: 1s;
-      &:hover {
-        font-size: 12vw;
-        color: #445f56;
-      }
+    &:hover {
+      font-size: 12vw;
+      color: #445f56;
     }
   `;
   const More = styled.button`
-    display: flex;
-    font-family: 'Nanum Gothic';
-    justify-content: center;
-    align-items: center;
-    margin-top: 2vh;
-    margin-left: 8vw;
     background-color: rgba(255, 100, 100, 1);
+    font-family: 'Nanum Gothic';
     color: white;
+    float: right;
     text-align: center;
-    width: 80vw;
+    width: 28vw;
     height: 5vh;
     border-radius: 10px;
     border: none;
-    @media ${props => props.theme.tablet} {
-      background-color: rgba(255, 100, 100, 1);
-      font-family: 'Nanum Gothic';
-      color: white;
-      float: right;
-      text-align: center;
-      width: 20vw;
-      height: 5vh;
-      border-radius: 10px;
-      border: none;
-      margin: 1vw;
-      transition-duration: 1s;
-      &:hover {
-        width: 22vw;
-        height: 6vh;
-      }
+    margin: 1vw;
+    transition-duration: 1s;
+    &:hover {
+      width: 22vw;
+      height: 6vh;
     }
   `;
   const InnerContent = styled.h2`
@@ -104,51 +60,18 @@ const SecondRending = () => {
     flex-direction: column;
     justify-content: center;
     padding: 2vw;
-    width: 100%;
+    width: 70vw;
     color: white;
     font-weight: bold;
-    height: 70vh;
+    height: 60vh;
     font-family: 'Nanum Gothic', sans-serif;
     background-color: rgba(0, 0, 10, 0.1);
-    font-size: 2rem;
+    font-size: 1.3rem;
+    animation: ${contentSlide} 2s 0.5s;
+    animation-fill-mode: backwards;
     transition-duration: 1s;
-    @media ${props => props.theme.tablet} {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2vw;
-      width: 95vw;
-      color: white;
-      font-weight: bold;
-      height: 60vh;
-      font-family: 'Nanum Gothic', sans-serif;
-      background-color: rgba(0, 0, 10, 0.1);
-      font-size: 4vw;
-      animation: ${contentSlide} 1s 0.5s;
-      animation-fill-mode: backwards;
-      transition-duration: 1s;
-      &:hover {
-        transform: translateX(10px) translateY(-10px);
-      }
-    }
-    @media ${props => props.theme.desktop} {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2vw;
-      width: 70vw;
-      color: white;
-      font-weight: bold;
-      height: 60vh;
-      font-family: 'Nanum Gothic', sans-serif;
-      background-color: rgba(0, 0, 10, 0.1);
-      font-size: 2vw;
-      animation: ${contentSlide} 2s 0.5s;
-      animation-fill-mode: backwards;
-      transition-duration: 1s;
-      &:hover {
-        transform: translateX(10px) translateY(-10px);
-      }
+    &:hover {
+      transform: translateX(10px) translateY(-10px);
     }
   `;
   const Top = styled.div`
@@ -200,9 +123,6 @@ const SecondRending = () => {
       }
     }
   `;
-  const toBre = () => {
-    window.scrollTo({ top: 2000, left: 0, behavior: 'smooth' });
-  };
   const Div = styled.div`
     transition-duration: 1s;
     line-height: 150%;
